@@ -1,0 +1,57 @@
+# Publishes the site to GitHub Pages on every push to main.
+#
+# Prerequisite, done once in the browser:
+#   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
+#
+# The site is currently served from a project subpath, so BASE_PATH is set.
+# If you later move to a custom domain (e.g. docs.elifepathways.org):
+#   1. change SITE_URL to that domain
+#   2. delete the BASE_PATH line
+#   3. add the domain under Settings -> Pages -> Custom domain
+name: Deploy docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+        env:
+          SITE_URL: https://elifepathways.github.io
+          BASE_PATH: /kotahi-docs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

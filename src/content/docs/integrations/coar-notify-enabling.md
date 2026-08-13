@@ -15,7 +15,7 @@ Review** straight into your Kotahi inbox, and Kotahi can respond with status
 notifications including endorsements and review relationships.
 
 This page covers turning it on and configuring it. For day-to-day use, see
-[Using COAR Notify](/integrations/coar-notify-using/).
+[Using COAR Notify](../../integrations/coar-notify-using/).
 
 ## Before you start
 

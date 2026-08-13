@@ -7,7 +7,7 @@ reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/cms.html."
 ---
 :::caution[Describes the earlier CMS]
-This overview predates **BATS CMS**. See [BATS CMS administration](/cms/bats-cms-administration/) for the current CMS layer.
+This overview predates **BATS CMS**. See [BATS CMS administration](../../cms/bats-cms-administration/) for the current CMS layer.
 :::
 
 ---

@@ -9,7 +9,7 @@ sourceNote: "Written for the July 2026 COAR Notify release."
 ---
 
 Once COAR Notify is
-[enabled and configured](/integrations/coar-notify-enabling/), it adds two
+[enabled and configured](../../integrations/coar-notify-enabling/), it adds two
 places to look and a handful of workflow behaviours.
 
 ## The COAR Notify inbox

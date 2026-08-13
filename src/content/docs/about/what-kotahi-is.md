@@ -40,7 +40,7 @@ take the software and your content elsewhere whenever you want.
 
 What does cost money is *someone running it*. If you want eLife Pathways to
 host, configure or support your instance, see
-[Service and support](/about/service-and-support/).
+[Service and support](../../about/service-and-support/).
 
 ## Why it exists
 

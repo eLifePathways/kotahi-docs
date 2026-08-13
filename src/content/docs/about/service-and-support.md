@@ -61,7 +61,7 @@ operation.
 
 Entitlements differ between customers, and the detail of what any given
 organisation receives is set in their agreement rather than on this page. To
-work out what fits, [get in touch](/about/contact/).
+work out what fits, [get in touch](../../about/contact/).
 
 :::caution[Unresolved: service models vs. tiers]
 The three models above are the public position inherited from the archived

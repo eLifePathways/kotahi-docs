@@ -14,7 +14,7 @@ Kotahi is stewarded by **eLife Pathways**.
 **[pathways@elifesciences.org](mailto:pathways@elifesciences.org)**
 
 Get in touch about running Kotahi, arranging a demo, or discussing which
-[service model](/about/service-and-support/) fits your community.
+[service model](../../about/service-and-support/) fits your community.
 
 ## Reporting a problem or requesting a feature
 

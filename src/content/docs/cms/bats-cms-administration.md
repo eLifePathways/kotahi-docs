@@ -13,7 +13,7 @@ content as a public website. It reads from Kotahi over the Kotahi GraphQL API,
 so publications created in Kotahi can surface on your site without re-entry.
 
 This page covers administering a BATS CMS site. It does not cover the Kotahi
-submission and review side — see [Using Kotahi](/using-kotahi/dashboard/) for
+submission and review side — see [Using Kotahi](../../using-kotahi/dashboard/) for
 that.
 
 :::note[Two systems, one platform]
