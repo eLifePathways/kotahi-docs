@@ -1,0 +1,314 @@
+/* ===========================================================================
+   Kotahi documentation — layout and typography
+   Loaded after kotahi-tokens.css, which holds all verified colour values.
+
+   Design intent: a reference-documentation site, so long-form legibility and
+   scannability beat visual flourish. Warm paper background rather than pure
+   white (it comes from the eLife Pathways palette and is easier on the eye
+   over long procedural pages). Kotahi green carries interaction; plum carries
+   heading hierarchy; magenta is held back for the few places that need a
+   third signal.
+   =========================================================================== */
+
+/* ------------------------------------------------------------- typography --- */
+body {
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slightly tighter, more confident headings than Starlight's defaults. */
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Montserrat', var(--sl-font);
+  letter-spacing: -0.015em;
+  color: var(--kotahi-heading);
+}
+
+.sl-markdown-content h2 {
+  font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.7rem);
+  line-height: 1.25;
+  margin-top: 2.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+.sl-markdown-content h3 {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  margin-top: 2rem;
+}
+
+/* Body copy: a comfortable measure. Procedural docs get read, not skimmed. */
+.sl-markdown-content {
+  font-size: var(--sl-text-body);
+  line-height: 1.7;
+}
+
+.sl-markdown-content p,
+.sl-markdown-content li {
+  max-width: 68ch;
+}
+
+/* Ordered lists are the backbone of these pages — make the numbers legible. */
+.sl-markdown-content ol {
+  counter-reset: kotahi-step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sl-markdown-content ol > li {
+  counter-increment: kotahi-step;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-block: 0.6rem;
+}
+
+.sl-markdown-content ol > li::before {
+  content: counter(kotahi-step);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  display: grid;
+  place-items: center;
+  inline-size: 1.65rem;
+  block-size: 1.65rem;
+  border-radius: 50%;
+  background: var(--kotahi-callout-bg);
+  color: var(--sl-color-text-accent);
+  border: 1px solid var(--kotahi-green-ui);
+  font-family: 'Montserrat', var(--sl-font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nested ordered lists fall back to plain markers to avoid double numbering. */
+.sl-markdown-content ol ol > li::before {
+  content: counter(kotahi-step, lower-alpha);
+  border-radius: 0.35rem;
+}
+
+/* ------------------------------------------------------------------ links --- */
+.sl-markdown-content a:not(:where(.not-content *)) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--kotahi-green-ui);
+}
+
+.sl-markdown-content a:hover:not(:where(.not-content *)) {
+  text-decoration-thickness: 2px;
+}
+
+/* Visible focus for keyboard users, on the green rather than the UA default. */
+:where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 2px solid var(--sl-color-text-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------------------ screenshots --- */
+/* UI screenshots need a boundary — many have white chrome that would
+   otherwise bleed into the page background. */
+.sl-markdown-content img:not(:where(.not-content *)) {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 0.5rem;
+  background: var(--sl-color-bg);
+  display: block;
+  margin-inline: auto;
+  box-shadow: 0 1px 2px rgb(20 16 15 / 6%), 0 8px 24px -12px rgb(20 16 15 / 12%);
+}
+
+:root[data-theme='dark'] .sl-markdown-content img:not(:where(.not-content *)) {
+  box-shadow: none;
+}
+
+/* ---------------------------------------------------------- review status --- */
+/* Provenance banner. Converted-but-unverified content must be visibly
+   distinct from checked content — otherwise a 2026 screenshot reads as
+   current fact. */
+.review-status {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  margin-block: 0 2rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: var(--sl-text-sm);
+  line-height: 1.5;
+  border: 1px solid var(--sl-color-hairline);
+  background: var(--sl-color-gray-7);
+  color: var(--sl-color-gray-2);
+}
+
+:root[data-theme='dark'] .review-status {
+  background: var(--sl-color-gray-6);
+  color: var(--sl-color-gray-2);
+}
+
+.review-status__icon {
+  flex: none;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.review-status--verified {
+  border-color: var(--kotahi-green-ui);
+  background: var(--kotahi-callout-bg);
+  color: var(--sl-color-text);
+}
+
+.review-status--new {
+  border-color: var(--kotahi-green-ui);
+  background: var(--kotahi-callout-bg);
+  color: var(--sl-color-text);
+}
+
+.review-status strong {
+  color: var(--sl-color-text);
+}
+
+/* ---------------------------------------------------- site title / header --- */
+.kotahi-site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--sl-color-text);
+}
+
+.kotahi-site-title img {
+  block-size: 2rem;
+  inline-size: auto;
+}
+
+.kotahi-stewardship {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--sl-color-hairline);
+  font-size: 0.65rem;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sl-color-gray-3);
+  white-space: nowrap;
+}
+
+.kotahi-stewardship img {
+  block-size: 0.95rem;
+  inline-size: auto;
+}
+
+/* On narrow screens the attribution would crowd the logo; the footer keeps it. */
+@media (max-width: 50rem) {
+  .kotahi-stewardship {
+    display: none;
+  }
+}
+
+:root[data-theme='dark'] .kotahi-stewardship img {
+  filter: invert(1) brightness(1.9) saturate(0);
+}
+
+/* ----------------------------------------------------------------- cards --- */
+.sl-markdown-content .card {
+  border-color: var(--sl-color-hairline);
+}
+
+/* Starlight's card icons default to an amber chip, which reads as a warning
+   and fights the palette. Normalise them to the brand green tint — the green
+   here is decorative chrome around a dark glyph, and ink-on-green is the
+   pairing that passes AA (white-on-green does not). */
+.sl-markdown-content .card .icon,
+.sl-markdown-content .sl-link-card .icon {
+  background: var(--kotahi-callout-bg) !important;
+  border: 1px solid var(--kotahi-green-ui) !important;
+  border-radius: 0.4rem;
+  color: var(--sl-color-text) !important;
+  padding: 0.28rem;
+  box-sizing: content-box;
+}
+
+:root[data-theme='dark'] .sl-markdown-content .card .icon,
+:root[data-theme='dark'] .sl-markdown-content .sl-link-card .icon {
+  color: var(--kotahi-green-bright) !important;
+}
+
+/* ------------------------------------------------------------------- hero --- */
+/* Starlight stamps width="400" height="400" on the hero image. Our wordmark
+   is ~2.2:1, so pin the aspect ratio to the file's own to avoid any chance of
+   letterboxing or a layout-shift jump before the image decodes. */
+.hero img,
+.hero .hero-html img {
+  aspect-ratio: auto !important;
+  max-width: 100%;
+  /* The hero image is supplied as raw HTML, so Starlight's own
+     `.hero > img { height: auto }` no longer matches it. Without this the
+     browser honours the height attribute and squashes the wordmark. */
+  height: auto !important;
+}
+
+/* ------------------------------------------------------------------ table --- */
+.sl-markdown-content table {
+  font-size: var(--sl-text-sm);
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.sl-markdown-content :is(th, td) {
+  border: 1px solid var(--sl-color-hairline);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sl-markdown-content th {
+  background: var(--sl-color-gray-7);
+  font-family: 'Montserrat', var(--sl-font);
+  font-weight: 700;
+}
+
+:root[data-theme='dark'] .sl-markdown-content th {
+  background: var(--sl-color-gray-6);
+}
+
+/* ------------------------------------------------------------- hero tweak --- */
+.hero h1 {
+  font-family: 'Montserrat', var(--sl-font);
+  letter-spacing: -0.025em;
+}
+
+/* The one place raw brand green is legitimate: large display type. */
+.hero .tagline {
+  color: var(--sl-color-gray-2);
+}
+
+/* ---------------------------------------------------------------- footer --- */
+.kotahi-footer-note {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sl-color-hairline);
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-3);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------- print-friendly --- */
+@media print {
+  .review-status { border: 1px solid #999; }
+  .sl-markdown-content img { box-shadow: none; }
+}
+
+/* ------------------------------------------------- reduced-motion respect --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

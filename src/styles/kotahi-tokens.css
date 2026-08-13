@@ -1,0 +1,96 @@
+/* ===========================================================================
+   Kotahi documentation — colour and type system
+   An eLife Pathways platform
+
+   DO NOT "correct" the green values back to the raw brand colour.
+   Kotahi brand green is #2FAC66. It scores 2.84:1 against the page
+   background, which FAILS WCAG 2.1 AA for body text (needs 4.5:1) and fails
+   even the 3:1 minimum for UI components. Raw #2FAC66 is therefore used only
+   for large display type, fills and decorative marks, where it is legitimate.
+   Links and small text use #24854F (4.51:1) in light mode and
+   #2FAC66 (6.43:1) in dark mode.
+
+   All values in this file were computed and verified, not eyeballed.
+   Regenerate with palette.py, which fails if any pair drops below AA.
+   =========================================================================== */
+
+:root {
+  /* --- raw brand, for fills and display type only --------------------- */
+  --kotahi-green:        #2FAC66;
+  --pathways-plum:       #440535;
+  --pathways-magenta:    #D71D62;
+  --bats-navy:           #25346D;
+  --kotahi-paper:        #FFFCF6;
+
+  /* --- accessible derivations ----------------------------------------- */
+  --kotahi-green-text:   #24854F;
+  --kotahi-green-ui:     #2EA763;
+  --kotahi-green-bright: #2FAC66;
+
+  --sl-font: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+             Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sl-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+                  Consolas, monospace;
+}
+
+/* ---------------------------------------------------------------- light --- */
+:root[data-theme="light"] {
+  --sl-color-accent-low:  #E8F3EC;
+  --sl-color-accent:      #2EA763;
+  --sl-color-accent-high: #24854F;
+
+  --sl-color-white:       #14100F;
+  --sl-color-gray-1:      #2D2429;
+  --sl-color-gray-2:      #55444C;
+  --sl-color-gray-3:      #836875;
+  --sl-color-gray-4:      #A58D99;
+  --sl-color-gray-5:      #D2C6CC;
+  --sl-color-gray-6:      #EDE8EB;
+  --sl-color-gray-7:      #F7F5F6;
+  --sl-color-black:       #FFFCF6;
+
+  --sl-color-text:          #14100F;
+  --sl-color-text-accent:   #24854F;
+  --sl-color-text-invert:   #FFFCF6;
+  --sl-color-bg:            #FFFCF6;
+  --sl-color-bg-nav:        #FFFCF6;
+  --sl-color-bg-sidebar:    #FFFCF6;
+  --sl-color-bg-inline-code:#E8F3EC;
+  --sl-color-hairline:      #EDE8EB;
+  --sl-color-hairline-light:#F7F5F6;
+  --sl-color-hairline-shade:#EDE8EB;
+
+  --kotahi-heading:       #440535;
+  --kotahi-callout-bg:    #E8F3EC;
+}
+
+/* ----------------------------------------------------------------- dark --- */
+:root[data-theme="dark"] {
+  --sl-color-accent-low:  #18442B;
+  --sl-color-accent:      #2FAC66;
+  --sl-color-accent-high: #CCEBD9;
+
+  --sl-color-white:       #FFFFFF;
+  --sl-color-gray-1:      #EDE7E4;
+  --sl-color-gray-2:      #C8C0BD;
+  --sl-color-gray-3:      #9A918D;
+  --sl-color-gray-4:      #6B625E;
+  --sl-color-gray-5:      #453D3A;
+  --sl-color-gray-6:      #2C2624;
+  --sl-color-gray-7:      #1E1A18;
+  --sl-color-black:       #131211;
+
+  --sl-color-text:          #EDE7E4;
+  --sl-color-text-accent:   #2FAC66;
+  --sl-color-text-invert:   #131211;
+  --sl-color-bg:            #131211;
+  --sl-color-bg-nav:        #131211;
+  --sl-color-bg-sidebar:    #131211;
+  --sl-color-bg-inline-code:#2C2624;
+  --sl-color-hairline:      #2C2624;
+  --sl-color-hairline-light:#453D3A;
+  --sl-color-hairline-shade:#1E1A18;
+
+  --kotahi-heading:       #F3EDEA;
+  --kotahi-callout-bg:    #18442B;
+}

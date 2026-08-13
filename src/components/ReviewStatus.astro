@@ -1,0 +1,58 @@
+---
+/**
+ * Per-page provenance banner.
+ *
+ * Most of this site's content was machine-converted from a July 2026 scrape
+ * of the retired kotahi.community site and has NOT been checked against a
+ * running Kotahi instance. Publishing that silently would let stale
+ * screenshots and stale facts read as current. So every page declares its
+ * own state, and the default is the honest one.
+ */
+interface Props {
+  status?: 'verified' | 'converted-unverified' | 'new' | 'rewritten';
+  sourceNote?: string;
+  appliesTo?: string;
+}
+
+const { status = 'converted-unverified', sourceNote, appliesTo } = Astro.props;
+
+const COPY: Record<string, { icon: string; label: string; body: string }> = {
+  verified: {
+    icon: '✓',
+    label: 'Checked',
+    body: 'This page has been verified against a running Kotahi instance.',
+  },
+  'converted-unverified': {
+    icon: '!',
+    label: 'Awaiting review',
+    body:
+      'Converted automatically from the retired kotahi.community documentation ' +
+      '(archived 13 July 2026). The steps and screenshots have not yet been ' +
+      'checked against a current Kotahi release and may be out of date.',
+  },
+  new: {
+    icon: '★',
+    label: 'New',
+    body: 'Written for this site and current at the date shown below.',
+  },
+  rewritten: {
+    icon: '✎',
+    label: 'Rewritten',
+    body:
+      'Rewritten for this site to reflect eLife Pathways stewardship. ' +
+      'Replaces earlier text that is no longer accurate.',
+  },
+};
+
+const meta = COPY[status] ?? COPY['converted-unverified'];
+---
+
+<div class={`review-status review-status--${status}`} role="note">
+  <span class="review-status__icon" aria-hidden="true">{meta.icon}</span>
+  <span>
+    <strong>{meta.label}.</strong>{' '}
+    {meta.body}
+    {appliesTo && <> Applies to Kotahi <strong>{appliesTo}</strong>.</>}
+    {sourceNote && <> {sourceNote}</>}
+  </span>
+</div>

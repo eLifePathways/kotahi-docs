@@ -1,0 +1,29 @@
+---
+/**
+ * Starlight PageTitle override: renders the normal h1, then the page's
+ * provenance banner immediately beneath it so review state is impossible
+ * to miss.
+ */
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import ReviewStatus from './ReviewStatus.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const data = entry.data as {
+  reviewStatus?: 'verified' | 'converted-unverified' | 'new' | 'rewritten';
+  sourceNote?: string;
+  appliesTo?: string;
+  template?: string;
+};
+const isSplash = data.template === 'splash';
+---
+
+<Default {...Astro.props}><slot /></Default>
+{
+  !isSplash && (
+    <ReviewStatus
+      status={data.reviewStatus}
+      sourceNote={data.sourceNote}
+      appliesTo={data.appliesTo}
+    />
+  )
+}

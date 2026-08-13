@@ -1,0 +1,24 @@
+---
+/**
+ * Site title with explicit eLife Pathways attribution.
+ *
+ * The brief asked to "make it clear this is now an eLifepathways.org
+ * platform". Doing that in the header — rather than only in a footer or an
+ * About page — means it is visible on every page, including ones people
+ * arrive at directly from search.
+ */
+import { Image } from 'astro:assets';
+import kotahiLogo from '../assets/brand/kotahi-logo.png';
+import pathwaysLogo from '../assets/brand/elife-pathways-logo.png';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = `${base}/`;
+---
+
+<a href={href} class="kotahi-site-title" aria-label="Kotahi documentation — home">
+  <Image src={kotahiLogo} alt="Kotahi" densities={[1, 2]} loading="eager" />
+  <span class="kotahi-stewardship">
+    <span>a platform from</span>
+    <Image src={pathwaysLogo} alt="eLife Pathways" densities={[1, 2]} loading="eager" />
+  </span>
+</a>

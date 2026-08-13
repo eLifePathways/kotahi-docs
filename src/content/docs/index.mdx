@@ -1,0 +1,109 @@
+---
+title: Kotahi
+description: "Documentation and general information for Kotahi, the open-source submission and peer review platform stewarded by eLife Pathways."
+template: splash
+hero:
+  tagline: >-
+    Open-source submission and peer review for scholar-led publishing.
+    Configure the workflow you actually want, publish where you need to,
+    and take your content with you.
+  image:
+    # Raw HTML rather than `file:` on purpose. Starlight stamps
+    # width="400" height="400" on hero images, and Astro's transform then
+    # CROPS this 469x209 wordmark, cutting the final glyph off "Kotahi".
+    # Serving it from /public at its natural aspect avoids the transform.
+    html: |
+      <img src="/brand/kotahi-logo.png" alt="Kotahi"
+           width="469" height="209" fetchpriority="high" decoding="async">
+  actions:
+    - text: What Kotahi is
+      link: /about/what-kotahi-is/
+      icon: right-arrow
+      variant: primary
+    - text: Get started
+      link: /introduction/why-kotahi/
+      icon: open-book
+      variant: minimal
+    - text: View on GitHub
+      link: https://github.com/eLifePathways/Kotahi
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="No licence fees, no lock-in" icon="approve-check">
+    Kotahi is open source. Run it yourself, or have eLife Pathways run it for
+    you — either way you can take the software and your content elsewhere
+    whenever you want.
+  </Card>
+  <Card title="Workflows you configure" icon="setting">
+    Submission, reviewer and decision forms are all configurable without
+    writing code. The workflow is a setting, not a development project.
+  </Card>
+  <Card title="Built for PRC and preprints" icon="document">
+    Publish-Review-Curate, preprint review, overlay journals, Diamond Open
+    Access — the models traditional submission systems treat as edge cases.
+  </Card>
+  <Card title="Connected to the ecosystem" icon="puzzle">
+    COAR Notify, DOI registration, automated preprint ingestion, and a CMS
+    layer for the public-facing side.
+  </Card>
+</CardGrid>
+
+## Find your way around
+
+<CardGrid>
+  <LinkCard
+    title="New to Kotahi"
+    description="Why it exists, what it does, and which review models it supports."
+    href="/introduction/why-kotahi/"
+  />
+  <LinkCard
+    title="Using Kotahi day to day"
+    description="The Dashboard, the Manuscripts page, and the editorial Control page."
+    href="/using-kotahi/interface-overview/"
+  />
+  <LinkCard
+    title="Configuring an instance"
+    description="Forms, users, task and email templates, and the full settings reference."
+    href="/configuration/submission-forms/"
+  />
+  <LinkCard
+    title="COAR Notify"
+    description="Enable bidirectional notifications between repositories and your review workflow."
+    href="/integrations/coar-notify-enabling/"
+  />
+  <LinkCard
+    title="BATS CMS"
+    description="Administer the public-facing website that presents your published content."
+    href="/cms/bats-cms-administration/"
+  />
+  <LinkCard
+    title="Designing your workflow"
+    description="Map your existing process before you configure software around it."
+    href="/workflow-design/technology-supporting-people/"
+  />
+</CardGrid>
+
+:::caution[This documentation is being rebuilt]
+Kotahi's previous documentation lived at `kotahi.community`, a domain that has
+since expired. Most of the pages here were recovered from an archive of that
+site taken on **13 July 2026** and converted automatically. They have **not**
+yet been checked against a current Kotahi release.
+
+Every page carries a status banner saying whether it has been verified,
+converted and awaiting review, or newly written. Please read those banners —
+and if you spot something wrong, the **Edit page** link at the bottom of each
+page is the fastest way to fix it.
+:::
+
+<div class="kotahi-footer-note">
+
+Kotahi is stewarded by <a href="https://elifepathways.org">eLife Pathways</a>,
+part of eLife. Kotahi was originally developed by
+<a href="https://coko.foundation/">Coko</a> with a community of publishers and
+researchers.
+
+</div>
