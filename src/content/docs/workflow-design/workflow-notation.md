@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/designing-and-optimising-workflow/notation.html."
 ---
----
 
-### In this section
-
-### A handy tool to document workflows.
+*A handy tool to document workflows.*
 
 The most effective way to describe workflow is through a numbered list of who and what for each step, using WorkFlow MarkUp (WFMU).
 

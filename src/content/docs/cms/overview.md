@@ -10,11 +10,7 @@ sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/cms.html."
 This overview predates **BATS CMS**. See [BATS CMS administration](../../cms/bats-cms-administration/) for the current CMS layer.
 :::
 
----
-
-### In this section
-
-### Learn about the amazingly versatile Kotahi CMS.
+*Learn about the amazingly versatile Kotahi CMS.*
 
 Kotahi offers configurable publication options, including an internal CMS. Content can be published to the CMS, external endpoints, or both.
 

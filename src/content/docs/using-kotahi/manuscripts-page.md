@@ -6,11 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/manuscripts.html."
 ---
-### In this section
-
-- An Indepth Look At All Features
-- Automated Ingestions
-- Chat Functionality
 
 The Manuscripts page is generally only available to Kotahi **Group Manager** and **Editor** roles.
 

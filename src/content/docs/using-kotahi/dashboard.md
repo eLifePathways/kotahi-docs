@@ -6,11 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/dashboard.html."
 ---
-### In this section
-
-- An Indepth Look At All Features
-- Automated Ingestions
-- Chat Functionality
 
 The Dashboard shows you the research objects you are assigned to.
 

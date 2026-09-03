@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/pdf.html."
 ---
----
 
-### In this section
-
-### Kotahi’s Innovative Approach to PDF. Including the new AI Design Studio.
+*Kotahi’s Innovative Approach to PDF. Including the new AI Design Studio.*
 
 Kotahi introduces a streamlined PDF production interface. With the default template, generating a polished PDF is as easy as a single click.
 

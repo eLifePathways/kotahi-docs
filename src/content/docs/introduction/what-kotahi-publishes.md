@@ -6,12 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/content.html."
 ---
-### In this section
-
-- Types of Content Kotahi Can Publish
-- Where Kotahi Can Publish To
-- Some Configuration Options
-- Video Covering These Topics
 
 Kotahi is highly configurable and can publish a wide variety of research outputs. Here are some of the main options:
 

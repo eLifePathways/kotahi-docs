@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/users.html."
 ---
----
 
-### In this section
-
-### Manage your users and roles.
+*Manage your users and roles.*
 
 Kotahi has easy to use tools to manage users.
 

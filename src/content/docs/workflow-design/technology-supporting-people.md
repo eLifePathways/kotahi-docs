@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/designing-and-optimising-workflow/think.html."
 ---
----
 
-### In this section
-
-### You shouldn’t conform to technology. Technology should conform to you.
+*You shouldn’t conform to technology. Technology should conform to you.*
 
 Kotahi's core design principle is that technology should support people and processes, not that people should serve technology.
 

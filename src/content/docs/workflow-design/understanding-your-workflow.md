@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/designing-and-optimising-workflow/understand.html."
 ---
----
 
-### In this section
-
-### From a birds eye view all scholarly workflows look the same.
+*From a birds eye view all scholarly workflows look the same.*
 
 At a high level, many scholarly workflows follow a similar path - a research object is submitted, reviewed, improved, and shared. However, when examining the specifics, workflows that appear identical on the surface often diverge in their details.
 

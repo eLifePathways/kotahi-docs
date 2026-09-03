@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/citations.html."
 ---
----
 
-### In this section
-
-### Automated citation look ups.
+*Automated citation look ups.*
 
 When using the production interface, the team can check the citations and improve them with the assistance of Kotahi’s automated citation tools.
 

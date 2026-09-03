@@ -6,14 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/workflow.html."
 ---
-### In this section
-
-- An Indepth Look At All Features
-- Tasks
-- Notifications
-- MetaData
-- Manuscript Editing
-- Decision Controls
 
 Every research object has its own Control page. This is used by the team to manage the review and publishing process.
 

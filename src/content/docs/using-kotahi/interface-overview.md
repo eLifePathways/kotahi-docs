@@ -6,9 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/interfaces.html."
 ---
-### In this section
-
-- A Look At All The Kotahi Interfaces
 
 Kotahi has a number of screens or pages connected together that allow for the amazing versatility of workflows. From a very high level, the interconnected ‘spaces’ or pages look like the following.
 

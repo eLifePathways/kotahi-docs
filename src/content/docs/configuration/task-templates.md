@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/tasks.html."
 ---
----
 
-### In this section
-
-### Tasks help define, manage, track and optimize your workflow.
+*Tasks help define, manage, track and optimize your workflow.*
 
 The task configuration in Kotahi is an extremely powerful yet often underestimated feature. Defining tasks is not just a to-do list but rather it is where you can further optimise and customise your editorial and publishing workflows.
 

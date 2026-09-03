@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html."
 ---
----
 
-### In this section
-
-### Configure Kotahi to meet your needs.
+*Configure Kotahi to meet your needs.*
 
 Kotahi has many configuration options to meet a diverse array of workflows and publishing models.
 

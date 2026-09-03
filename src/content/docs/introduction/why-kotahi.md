@@ -6,11 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/why.html."
 ---
-### In this section
-
-- Scholarly Communications Landscape
-- Kotahi Design Philosophy
-- Some Key Kotahi Features
 
 ## Why did we make Kotahi?
 

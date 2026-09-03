@@ -10,11 +10,7 @@ sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/advancedcms.ht
 This page is background on the **original Kotahi CMS**, which Coko built on [11ty](https://www.11ty.dev/). It is not documentation for **BATS CMS**, the CMS layer eLife Pathways is now developing. The architectural argument still applies; the specific implementation details do not.
 :::
 
----
-
-### In this section
-
-### Learn more about the flexability of the Kotahi CMS.
+*Learn more about the flexability of the Kotahi CMS.*
 
 The Kotahi CMS is an Agile Digital Content Platforms (or ACP\* for short), better known as 'static website generator' or 'headless CMS'. ACP’s are a game-changing solution. With an ACP, publishers define the logic and organisation of their content using plain text files. This paradigm escapes the 'hard-coded' and predefined logic imposed by a GUI, and allows for enormous flexibility for publishers wanting to tailor their content's structure, design, and functionality.
 

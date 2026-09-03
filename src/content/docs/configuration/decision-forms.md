@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/eval.html."
 ---
----
 
-### In this section
-
-### Build a powerful form for decisions and evaluation.
+*Build a powerful form for decisions and evaluation.*
 
 The decision/evaluation form builder is powerful because it enables detailed customization of the decision-making process. By allowing the addition of custom fields and metadata, it goes beyond basic accept/reject choices to capture nuanced evaluation criteria.
 

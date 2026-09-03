@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/email.html."
 ---
----
 
-### In this section
-
-### Managing email templates.
+*Managing email templates.*
 
 There are many options for managing customized event-driven automated emails.
 

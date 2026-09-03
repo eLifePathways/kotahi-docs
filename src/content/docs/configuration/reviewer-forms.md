@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/reviewer.html."
 ---
----
 
-### In this section
-
-### Build a powerful form for reviewers.
+*Build a powerful form for reviewers.*
 
 Kotahi's reviewer forms are a powerful tool designed to streamline the review process. They focus the workflow, reduce reviewer fatigue, and ensure consistent, structured data collection. This customization leads to more robust feedback and valuable analytics, enhancing the overall review quality.
 

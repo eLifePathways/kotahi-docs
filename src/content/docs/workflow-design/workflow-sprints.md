@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/designing-and-optimising-workflow/sprints.html."
 ---
----
 
-### In this section
-
-### Workflow Sprints are fun and fast.
+*Workflow Sprints are fun and fast.*
 
 A Workflow Sprint is a fast and efficient methodology for organisations to understand and optimise their publishing workflows before making technology choices.
 

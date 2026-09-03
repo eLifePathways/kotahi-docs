@@ -6,9 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/usecases.html."
 ---
-### In this section
-
-- Overview of Use Cases
 
 ## What Use Cases Does Kotahi Support?
 

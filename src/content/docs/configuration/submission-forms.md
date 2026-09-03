@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/submission.html."
 ---
----
 
-### In this section
-
-### When a submission form is more than just a submission form
+*When a submission form is more than just a submission form*
 
 The submission form builder allows you to customise submission forms to fit your workflow needs, whether ingesting metadata (from, for example, preprint servers) or accepting direct submissions. While it may not seem powerful at first glance, the form builder is actually a versatile tool for configuring workflows.
 

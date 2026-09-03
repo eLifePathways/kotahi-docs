@@ -6,11 +6,8 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/cmsuse.html."
 ---
----
 
-### In this section
-
-### Everything you need to know about the Kotahi headless CMS.
+*Everything you need to know about the Kotahi headless CMS.*
 
 Kotahi offers configurable publication options, including an internal CMS. Content can be published to the CMS, external endpoints, or both.
 

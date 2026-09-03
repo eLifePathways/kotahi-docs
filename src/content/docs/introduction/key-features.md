@@ -10,10 +10,6 @@ sourceNote: "Converted from docs.kotahi.community/getting-started/features.html.
 This page was written before eLife Pathways took over stewardship and describes some features — including AI-assisted ones — that have not been re-confirmed against a current release. Treat the list as indicative until it is verified.
 :::
 
-### In this section
-
-- More Detail on Key Features
-
 ## Key Features of Kotahi
 
 Kotahi is more than just a journal platform—it's a comprehensive scholarly publishing platform designed to support diverse workflows. Kotahi offers customizable workflows that extend beyond traditional journals, enabling teams to collaborate and process research objects according to their specific requirements.

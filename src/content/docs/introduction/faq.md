@@ -6,9 +6,6 @@ sidebar:
 reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/summary.html."
 ---
-### In this section
-
-- A Summary of Key Points
 
 ## Summary
 
