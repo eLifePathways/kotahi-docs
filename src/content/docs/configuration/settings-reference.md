@@ -136,12 +136,10 @@ One interesting user setting and a misplaced API key setting
 
 Settings relevant to the Production page include controls to configure output when using the ‘Reference’ parser.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Production' settings group with fields for 'Email to use for citation search', 'Number of results to return from citation search' set to 3, 'Select style formatting for citations' set to 'Chicago Manual of Style (CMOS)' and 'Select locale for citations' set to 'en-US'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Production' settings group with fields for 'Email to use for citation search', 'Number of results to return from citation search' set to 3, 'Select style formatting for citations' set to 'Chicago Manual of Style (CMOS)' and 'Select locale for citations' set to 'en-US'.
 :::
 
 ### Integrations and Publishing Endpoints
@@ -156,36 +154,30 @@ A checkbox setting to enable/disable the import of preprints from [Semantic Scho
 
 Settings related to some specific publishing endpoints. This may or may not be relevant to you. Essentially, if you are publishing preprint reviews to some external services the way in is via the hypothesis API.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains credentials (an API key, token or password) visible in plain text and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Publishing' section, 'Hypothesis' group, with a 'Hypothesis API key' field, a 'Hypothesis group id' field, and two unticked checkboxes: 'Apply Hypothesis tags in the submission form' and 'Reverse the order of Submission/Decision form fields published to Hypothesis'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Publishing' section, 'Hypothesis' group, with a 'Hypothesis API key' field, a 'Hypothesis group id' field, and two unticked checkboxes: 'Apply Hypothesis tags in the submission form' and 'Reverse the order of Submission/Decision form fields published to Hypothesis'.
 :::
 
 ### Crossref
 
 API information and controls for accessing Crossref.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Crossref' settings group listing fields for journal name, abbreviated name, home page, Crossref username, password, registrant id, depositor name and depositor email, a publication type dropdown set to 'article', DOI prefix, published article location, a CC BY 4.0 licence URL, and a ticked 'Publish to Crossref sandbox' checkbox.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Crossref' settings group listing fields for journal name, abbreviated name, home page, Crossref username, password, registrant id, depositor name and depositor email, a publication type dropdown set to 'article', DOI prefix, published article location, a CC BY 4.0 licence URL, and a ticked 'Publish to Crossref sandbox' checkbox.
 :::
 
 ### Webhook
 
 This section enables you to set a webhook for publishing to an external endpoint.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains credentials (an API key, token or password) visible in plain text and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Webhook' settings group with a 'Publishing webhook URL' pointing at a GitLab pipeline trigger endpoint, a 'Publishing webhook token' field, and 'Publishing webhook reference' set to 'main'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Webhook' settings group with a 'Publishing webhook URL' pointing at a GitLab pipeline trigger endpoint, a 'Publishing webhook token' field, and 'Publishing webhook reference' set to 'main'.
 :::
 
 **Publishing webhook URL** - the endpoint or target for the publishing action supplied as a URL
@@ -206,12 +198,10 @@ Kotahi can receive messages from [COAR's Notify service](https://www.coar-reposi
 
 A request results in a manuscript being imported and displayed on the Manuscripts page. Manuscripts imported via COAR Notify are identifiable by the Notify logo in the title text.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Manuscripts page listing five submissions in a table of Manuscript number, Title, Created, Updated, Status, Labels and Author columns, with a red arrow pointing to a manuscript carrying an 'UNSUBMITTED' status and a green 'COAR NOTIFY' label marking it as imported via COAR Notify.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Manuscripts page listing five submissions in a table of Manuscript number, Title, Created, Updated, Status, Labels and Author columns, with a red arrow pointing to a manuscript carrying an 'UNSUBMITTED' status and a green 'COAR NOTIFY' label marking it as imported via COAR Notify.
 :::
 
 ### AI Design Studio
@@ -234,12 +224,10 @@ Here you can set the timezone for the date picker when setting tasks.
 
 Configuration for the account information through which Kotahi will send emails. Currently, only Gmail is supported. These [instructions](https://support.google.com/accounts/answer/185833?hl=en) outline the correct Gmail password to use when configuring your account.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains credentials (an API key, token or password) visible in plain text and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Emails' settings section with three fields: 'Gmail email address', 'Gmail sender email address' and 'Gmail password' showing a masked value.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Emails' settings section with three fields: 'Gmail email address', 'Gmail sender email address' and 'Gmail password' showing a masked value.
 :::
 
 ### Event notifications

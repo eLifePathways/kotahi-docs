@@ -9,22 +9,18 @@ sourceNote: "Converted from docs.kotahi.community/getting-started/manuscripts.ht
 
 The Manuscripts page is generally only available to Kotahi **Group Manager** and **Editor** roles.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Manuscripts page in a journal configuration, listing research objects by Manuscript Number, Title, Created, Updated, Status badge, Author, and per-row links 'Control', 'View', 'Archive' and 'Production'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Manuscripts page in a journal configuration, listing research objects by Manuscript Number, Title, Created, Updated, Status badge, Author, and per-row links 'Control', 'View', 'Archive' and 'Production'.
 :::
 
 The Manuscripts page is entirely configurable, so the actual columns you may see in your version might be quite different to the example above (taken from a journal configuration of Kotahi).
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Manuscripts page configured for a preprint review workflow, with a 'Refresh' button, 'Select All', an 'Archive' action, and columns for Created, Updated, Status, Labels such as 'READY TO EVALUATE' and 'EVALUATED', and Author.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Manuscripts page configured for a preprint review workflow, with a 'Refresh' button, 'Select All', an 'Archive' action, and columns for Created, Updated, Status, Labels such as 'READY TO EVALUATE' and 'EVALUATED', and Author.
 :::
 
 The Manuscripts page displays all research objects in the system. The above image shows a very different Manuscripts page configured for a preprint review workflow. You can choose which field you wish to display from the Configuration>Workflow page.
@@ -72,12 +68,10 @@ You can select or bulk select manuscripts from the Manuscripts page. Once you ha
 
 Kotahi can be configured to import manuscripts automatically from the Settings→Configuration→Manuscripts page. If the Manuscripts page displays a refresh button as below, this is for the automated batch ingestion of submissions. Generally, this is used for the ingestion of preprints from various sources but the functionality could be used for batch ingestion of other types of material.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Close-up of the Manuscripts page header with the 'Refresh' button spotlighted next to the search and chat icons; this button triggers automated batch ingestion of submissions.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Close-up of the Manuscripts page header with the 'Refresh' button spotlighted next to the search and chat icons; this button triggers automated batch ingestion of submissions.
 :::
 
 In most use cases, this button is used for ingesting preprints from various sources using its AI-powered engine. If the ‘Refresh’ button is available, pressing it will trigger this automated process. The system can also be configured to ingest preprints on a regular schedule without needing the button to be pressed. This automated ingestion helps keep your preprint collection up-to-date efficiently.
@@ -86,12 +80,10 @@ In most use cases, this button is used for ingesting preprints from various sour
 
 There is a live discussion (chat) available for all members who have access to the Manuscripts page.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Group Manager discussion' chat panel opened beside the Manuscripts list, with date-separated messages, timestamps, a video-camera icon, a 'Hide Chat' button and a message field with 'Send'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Group Manager discussion' chat panel opened beside the Manuscripts list, with date-separated messages, timestamps, a video-camera icon, a 'Hide Chat' button and a message field with 'Send'.
 :::
 
 The chat also two very powerful features - rich text (including math) and @mentions. In addition, video chat is available. Clicking on the camera icon displayed will open a video chat room.
@@ -108,12 +100,10 @@ This enables rich text to be created or edited if the content is cut and pasted 
 
 Typing ‘@’ into the chat input area will display a pop-up of users that can access the chat.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Typing '@' in the chat input opens a pop-up list of five selectable users with access to the chat, shown above the message field and 'Send' button; choosing a name emails that person a notification.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Typing '@' in the chat input opens a pop-up list of five selectable users with access to the chat, shown above the message field and 'Send' button; choosing a name emails that person a notification.
 :::
 
 Selecting the name of the person you wish to notify will send them an email notification.

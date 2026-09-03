@@ -61,11 +61,9 @@ When you press ‘Publish’, the updated settings will be pushed to your publis
 
 This option allows you to hide your publishing endpoint from the web. Your publishing website will only be visible to those who have access to the ‘Draft’ link.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** CMS Layout page with the 'Status' panel highlighted: a ticked 'Draft' checkbox, the note 'Your publishing website will only be visible to those who have access to the Draft link', and the draft URL beneath.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** CMS Layout page with the 'Status' panel highlighted: a ticked 'Draft' checkbox, the note 'Your publishing website will only be visible to those who have access to the Draft link', and the draft URL beneath.
 :::
 

@@ -39,11 +39,9 @@ This service relies on 3rd party APIs to generate results. These services may be
 
 Settings to change the citation style and other related controls are located in the Configuration→Production section.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains credentials (an API key, token or password) visible in plain text and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Configuration 'Production' settings with 'Email to use for citation search', 'Number of results to return from citation search' set to 3, and the citation style dropdown open on 'American Psychological Association (APA)', 'Chicago Manual of Style (CMOS)' and 'Council of Science Editors (CSE)'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Configuration 'Production' settings with 'Email to use for citation search', 'Number of results to return from citation search' set to 3, and the citation style dropdown open on 'American Psychological Association (APA)', 'Chicago Manual of Style (CMOS)' and 'Council of Science Editors (CSE)'.
 :::
 

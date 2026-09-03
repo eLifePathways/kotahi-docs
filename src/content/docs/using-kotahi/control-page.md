@@ -9,12 +9,10 @@ sourceNote: "Converted from docs.kotahi.community/getting-started/workflow.html.
 
 Every research object has its own Control page. This is used by the team to manage the review and publishing process.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Control page for a manuscript with tabs Team, Decision, Reviews, Manuscript text, Metadata and 'Tasks & Notifications'. The Team tab shows three 'Assign editor' dropdowns and a Reviewer Status board with Invited, Accepted, In Progress and Completed columns, plus 'Discussion with author' and 'Editorial discussion' chat panels on the right.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Control page for a manuscript with tabs Team, Decision, Reviews, Manuscript text, Metadata and 'Tasks & Notifications'. The Team tab shows three 'Assign editor' dropdowns and a Reviewer Status board with Invited, Accepted, In Progress and Completed columns, plus 'Discussion with author' and 'Editorial discussion' chat panels on the right.
 :::
 
 There are 6 tabs:
@@ -40,12 +38,10 @@ The **Discussion with Author** is for the team to use to chat with the author (i
 
 The **Editorial discussion** is for the team to use to chat with each other about the research object. Reviewers also have access to this channel. A video link is also available for a group chat if required;
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Editorial discussion' tab of the Control page chat with a video-call button and a dated system entry recording that a reviewer invitation was sent, above the message field and 'Send' button.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Editorial discussion' tab of the Control page chat with a video-call button and a dated system entry recording that a reviewer invitation was sent, above the message field and 'Send' button.
 :::
 
 ## Team tab
@@ -104,12 +100,10 @@ A history of author feedback is captured in the feedback form. A record of autho
 
 It is possible to see the status of all reviews at a glance:
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Reviewer Status' panel labelled 'Version 1', with four columns of coloured status headings — 'Invited', 'Accepted', 'In Progress' and 'Completed'. A single reviewer card sits in 'In Progress' showing a reviewer name and 'Last updated today', with a 'See Declined (0)' link below.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Reviewer Status' panel labelled 'Version 1', with four columns of coloured status headings — 'Invited', 'Accepted', 'In Progress' and 'Completed'. A single reviewer card sits in 'In Progress' showing a reviewer name and 'Last updated today', with a 'See Declined (0)' link below.
 :::
 
 **Invited** - existing/new users have been assigned as a reviewer. This can be done manually or by sending a ‘Reviewer invitation’ email notification.
@@ -126,22 +120,18 @@ As reviewers are invited and progress through the workflow, the reviewer icons w
 
 Clicking on a reviewer card will display a pop-up with further information:
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Reviewer report pop-up over the greyed-out 'Reviewer Status' board, headed with the reviewer's name and a last-updated timestamp. It shows the reviewer's avatar, name and ORCID, 'Status: IN PROGRESS', the message "Review hasn't been completed yet", a 'Shared' checkbox and a 'Delete' button.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Reviewer report pop-up over the greyed-out 'Reviewer Status' board, headed with the reviewer's name and a last-updated timestamp. It shows the reviewer's avatar, name and ORCID, 'Status: IN PROGRESS', the message "Review hasn't been completed yet", a 'Shared' checkbox and a 'Delete' button.
 :::
 
 If the review is completed, this pop-up will display the actual review. Additional controls allow the editor to **‘Share’** the review - this enables submitted reviews to be visible to other reviewers who have submitted a review and have the ‘Shared’ enabled. **‘Hide review’** will hide the review from the Author when a Decision is submitted, and **‘Hide reviewer name’** will anonymise the review on the Review page.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Review report pop-up opened over the Control page Team tab, showing the reviewer's name and ORCID, 'Status: COMPLETED', 'Recommendation: REJECT', and sections for comments to the author, confidential comments to the editor, and supplementary files. Along the bottom are 'Hide Review', 'Hide Reviewer Name', a ticked 'Shared' checkbox and 'Delete'.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Review report pop-up opened over the Control page Team tab, showing the reviewer's name and ORCID, 'Status: COMPLETED', 'Recommendation: REJECT', and sections for comments to the author, confidential comments to the editor, and supplementary files. Along the bottom are 'Hide Review', 'Hide Reviewer Name', a ticked 'Shared' checkbox and 'Delete'.
 :::
 
 Clicking ‘See Declined’ at the bottom of this area will display all declined invitations. Reviewers who decline an invitation to review are directed to a landing page where feedback on the decision can be captured, and the user can also choose to ‘Opt out of further requests’ to participate in a peer review.
@@ -150,12 +140,10 @@ Clicking ‘See Declined’ at the bottom of this area will display all declined
 
 The **Decision tab** displays all the information and controls necessary to determine the outcome for the current review round.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Control page 'Decision' tab. 'Completed Reviews' lists an accepted reviewer invitation and 'Review 1' with the reviewer's name and ORCID, ticked 'Hide review' and 'Hide reviewer name' checkboxes and a 'Show' link. Below, the configurable Decision form offers 'Threaded Discussion' and 'Decision' rich-text editors with a 'Publish' checkbox and a drag-and-drop file area, with an 'Editorial discussion' panel open on the right.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Control page 'Decision' tab. 'Completed Reviews' lists an accepted reviewer invitation and 'Review 1' with the reviewer's name and ORCID, ticked 'Hide review' and 'Hide reviewer name' checkboxes and a 'Show' link. Below, the configurable Decision form offers 'Threaded Discussion' and 'Decision' rich-text editors with a 'Publish' checkbox and a drag-and-drop file area, with an 'Editorial discussion' panel open on the right.
 :::
 
 As with many things in Kotahi, the Decision form is entirely configurable (see section on Decision form), so the form you see is displayed on the Decision tab.
@@ -172,12 +160,10 @@ The ‘Submit’ button sends the decision and associated information to the sub
 
 The reviews tab displays all submitted reviews. Reviews still in progress will not be displayed on the Reviews page.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Control page 'Reviews' tab listing 'Completed Reviews' as Review 1, Review 2 and Review 3. Each row shows the reviewer's name and ORCID alongside 'Hide review' and 'Hide reviewer name' checkboxes and a 'Show' link; Review 1 has 'Hide reviewer name' ticked.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Control page 'Reviews' tab listing 'Completed Reviews' as Review 1, Review 2 and Review 3. Each row shows the reviewer's name and ORCID alongside 'Hide review' and 'Hide reviewer name' checkboxes and a 'Show' link; Review 1 has 'Hide reviewer name' ticked.
 :::
 
 The following settings can be enabled per review;
@@ -218,12 +204,10 @@ To send a notification to a new user (unregistered user) simply click on the ‘
 
 When the notification has been successfully sent, a check appears next to ‘Notify’ on the button, and you will also the action event recorded in the **Editorial discussion** chat.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Notifications row after a successful send: a registered recipient is selected, the type is 'Task notification', and the 'Notify' button now shows a tick. The 'Editorial discussion' panel on the right logs the reviewer invitation and the task notification with timestamps.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Notifications row after a successful send: a registered recipient is selected, the type is 'Task notification', and the 'Notify' button now shows a tick. The 'Editorial discussion' panel on the right logs the reviewer invitation and the task notification with timestamps.
 :::
 
 ### Tasks
@@ -277,12 +261,10 @@ You then set when the notification is sent out. The notification can be sent at 
 
 A record of email notifications sent manually or automatically are captured in a dropdown list, in descending order based on the date and time sent. System emails are sent by ‘Kotahi’ and notifications sent manually use the username as sender id e.g. ‘Ryan Dix’.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** 'Task details' overlay listing two notification recipients with the email templates 'Reviewer Invitation' and 'Task notification'; an arrow points to the expanded 'Hide all notifications sent (3)' log of dated, timestamped sent emails.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** 'Task details' overlay listing two notification recipients with the email templates 'Reviewer Invitation' and 'Task notification'; an arrow points to the expanded 'Hide all notifications sent (3)' log of dated, timestamped sent emails.
 :::
 
 If an email notification cannot be sent due to a configuration error, then a warning icon will be displayed on the ‘Send Now’ button.

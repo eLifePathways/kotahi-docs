@@ -13,12 +13,10 @@ Kotahi has easy to use tools to manage users.
 
 Users are managed from Settings→Users.
 
-:::caution[Screenshot withheld pending re-capture]
-A screenshot belongs here, but the archived capture contains personal data (names, email addresses or ORCID identifiers) belonging to real people and has not been published.
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
 
-**What it showed:** Kotahi Settings 'Users' table listing ten of 24 users, each row showing name and ORCID iD, 'Created' and 'Last Online' dates, role tags such as 'Group Manager', 'Admin' and 'User', and a 'Delete' link, with pagination below.
-
-*Action needed: re-capture this screen using test data.*
+**The screen shows:** Kotahi Settings 'Users' table listing ten of 24 users, each row showing name and ORCID iD, 'Created' and 'Last Online' dates, role tags such as 'Group Manager', 'Admin' and 'User', and a 'Delete' link, with pagination below.
 :::
 
 Here you see a list of all users in the system. The users are listed with the following information in columns:
