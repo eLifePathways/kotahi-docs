@@ -3,11 +3,13 @@
 # Prerequisite, done once in the browser:
 #   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
 #
-# The site is currently served from a project subpath, so BASE_PATH is set.
-# If you later move to a custom domain (e.g. docs.elifepathways.org):
-#   1. change SITE_URL to that domain
-#   2. delete the BASE_PATH line
-#   3. add the domain under Settings -> Pages -> Custom domain
+# The site is served from a custom domain at its ROOT, so BASE_PATH must NOT
+# be set. Setting it makes every asset URL start with that prefix, which 404s
+# on a root-served domain and leaves the site with no CSS. That is what
+# happened on 3 September 2026 when the custom domain first went live.
+#
+# public/CNAME carries the domain into the build artifact, so the custom
+# domain survives a redeploy rather than depending only on the repo setting.
 name: Deploy docs
 
 on:
@@ -39,8 +41,7 @@ jobs:
 
       - run: npm run build
         env:
-          SITE_URL: https://elifepathways.github.io
-          BASE_PATH: /kotahi-docs
+          SITE_URL: https://kotahi-docs.elifepathways.org
 
       - uses: actions/upload-pages-artifact@v3
         with:
