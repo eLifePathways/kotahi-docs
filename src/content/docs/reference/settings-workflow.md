@@ -7,16 +7,7 @@ reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html. That single page covered every settings tab; it is split here so each tab can be verified on its own."
 ---
 
-:::note[This is one of five settings pages]
-Kotahi's configuration screen is grouped into tabs, and each has its own page
-here: [General](../../reference/settings-general/) ·
-[Workflow](../../reference/settings-workflow/) ·
-[Production](../../reference/settings-production/) ·
-[Integrations and publishing](../../reference/settings-integrations/) ·
-[Notifications and email](../../reference/settings-notifications/).
-
-To reach any of them in Kotahi, choose **Settings → Configuration**.
-:::
+To reach these settings in Kotahi, choose **Settings → Configuration**.
 
 ### Dashboard
 

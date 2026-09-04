@@ -1,12 +1,24 @@
 ---
 /**
- * Per-page provenance banner.
+ * Per-page trust banner.
  *
- * Most of this site's content was machine-converted from a July 2026 scrape
- * of the retired kotahi.community site and has NOT been checked against a
- * running Kotahi instance. Publishing that silently would let stale
- * screenshots and stale facts read as current. So every page declares its
- * own state, and the default is the honest one.
+ * Most of this site was machine-converted from a July 2026 scrape of the
+ * retired kotahi.community site and has NOT been checked against a running
+ * Kotahi instance. Publishing that silently would let stale screenshots and
+ * stale facts read as current, so an unchecked page says so.
+ *
+ * Two deliberate decisions about what this does NOT show:
+ *
+ * 1. Nothing at all on `new` and `rewritten` pages. A reader does not need
+ *    telling that a page was written normally — the absence of a warning is
+ *    the signal. Only pages where trust is in question get a box.
+ *
+ * 2. `sourceNote` is never rendered. It is provenance for whoever maintains
+ *    the file, and it stays in the frontmatter and in git history where that
+ *    belongs. Printing it publicly is how "Positioning here needs sign-off
+ *    before launch" ended up on a customer-facing page on 4 September 2026.
+ *    Keeping it out of the template makes that impossible rather than
+ *    something someone has to keep catching.
  */
 interface Props {
   status?: 'verified' | 'converted-unverified' | 'new' | 'rewritten';
@@ -14,50 +26,37 @@ interface Props {
   appliesTo?: string;
 }
 
-const { status = 'converted-unverified', sourceNote, appliesTo } = Astro.props;
+const { status = 'converted-unverified', appliesTo } = Astro.props;
 
-const COPY: Record<string, { icon: string; label: string; body: string }> = {
+const COPY: Record<string, { icon: string; label: string; body?: string }> = {
   verified: {
     icon: '✓',
     label: 'Checked',
-    // Deliberately does NOT claim "verified against a running instance". Most
-    // pages will be checked that way, but pages describing configurable
-    // capability rather than screens are correctly checked against the product
-    // instead. The sourceNote below says which was done, so the banner must not
-    // assert the stronger claim on every page.
-    body: 'This page has been checked by the eLife Pathways team. See the note below for how.',
+    // No body. "Checked." says it; anything after it repeated the word. The
+    // appliesTo release, added below, is the only detail worth carrying —
+    // and it is the detail a reader can act on.
   },
   'converted-unverified': {
     icon: '!',
     label: 'Awaiting review',
     body:
-      'Converted automatically from the retired kotahi.community documentation ' +
-      '(archived 13 July 2026). The steps and screenshots have not yet been ' +
-      'checked against a current Kotahi release and may be out of date.',
-  },
-  new: {
-    icon: '★',
-    label: 'New',
-    body: 'Written for this site and current at the date shown below.',
-  },
-  rewritten: {
-    icon: '✎',
-    label: 'Rewritten',
-    body:
-      'Rewritten for this site to reflect eLife Pathways stewardship. ' +
-      'Replaces earlier text that is no longer accurate.',
+      'Converted from the retired kotahi.community documentation and not yet ' +
+      'checked against a current Kotahi release.',
   },
 };
 
-const meta = COPY[status] ?? COPY['converted-unverified'];
+const meta = COPY[status];
 ---
 
-<div class={`review-status review-status--${status}`} role="note">
-  <span class="review-status__icon" aria-hidden="true">{meta.icon}</span>
-  <span>
-    <strong>{meta.label}.</strong>{' '}
-    {meta.body}
-    {appliesTo && <> Applies to Kotahi <strong>{appliesTo}</strong>.</>}
-    {sourceNote && <> {sourceNote}</>}
-  </span>
-</div>
+{
+  meta && (
+    <div class={`review-status review-status--${status}`} role="note">
+      <span class="review-status__icon" aria-hidden="true">{meta.icon}</span>
+      <span>
+        <strong>{meta.label}.</strong>
+        {meta.body && <> {meta.body}</>}
+        {appliesTo && <> Applies to Kotahi <strong>{appliesTo}</strong>.</>}
+      </span>
+    </div>
+  )
+}
