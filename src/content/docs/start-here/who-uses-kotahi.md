@@ -4,7 +4,7 @@ description: "Organisations running submission, review and publishing workflows 
 sidebar:
   order: 3
 reviewStatus: rewritten
-sourceNote: "Rewritten from the archived Case Studies page. Commissioned-development detail and named personal testimonials have been withheld pending permission — see the note at the foot of this page."
+sourceNote: "Rewritten from the archived Case Studies page on docs.kotahi.community."
 ---
 
 Kotahi is in production with organisations running quite different publishing

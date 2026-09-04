@@ -4,7 +4,7 @@ description: "How Kotahi is offered: self-hosted, managed infrastructure, or a f
 sidebar:
   order: 4
 reviewStatus: rewritten
-sourceNote: "Rewritten from the archived Costs page. The three service models below are the public position inherited from that page; they do not map onto the internal four-tier entitlement model — see the note at the foot of this page."
+sourceNote: "Rewritten from the archived Costs page on docs.kotahi.community."
 ---
 
 Kotahi is open source. You can download it, run it, and modify it, with **no

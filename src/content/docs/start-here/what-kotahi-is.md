@@ -4,7 +4,7 @@ description: "Kotahi is an open-source submission and peer review platform for s
 sidebar:
   order: 1
 reviewStatus: rewritten
-sourceNote: "Replaces the archived About page, which announced a Kotahi Foundation that does not reflect current stewardship. Positioning here needs sign-off before launch."
+sourceNote: "Replaces the archived About page on docs.kotahi.community, which announced a Kotahi Foundation that does not reflect how Kotahi is stewarded today."
 ---
 
 Kotahi is an open-source platform for **submission and peer review**. It is

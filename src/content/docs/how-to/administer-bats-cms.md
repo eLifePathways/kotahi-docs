@@ -5,7 +5,7 @@ sidebar:
   order: 12
 reviewStatus: new
 appliesTo: "BATS CMS as at June 2026"
-sourceNote: "Generalised from an internal Kotahi Admin Training Guide (June 2026). Customer-specific details, personal contact information and unreleased features have been withheld — see the note at the foot of this page."
+sourceNote: "Generalised from an internal Kotahi Admin Training Guide, June 2026."
 ---
 
 **BATS CMS** builds your **public website** — the site where your published
