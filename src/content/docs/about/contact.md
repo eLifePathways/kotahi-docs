@@ -2,19 +2,26 @@
 title: "Contact"
 description: "How to reach the eLife Pathways team about Kotahi — support, demos, and contributing."
 sidebar:
-  order: 4
+  order: 1
 reviewStatus: rewritten
-sourceNote: "Replaces two dead contact routes: info@kotahi.community and forum.kotahi.community. The email below needs confirming as monitored before launch."
+sourceNote: "Replaces two dead contact routes: info@kotahi.community and forum.kotahi.community, both on the expired domain."
 ---
 
 Kotahi is stewarded by **eLife Pathways**.
+
+## Reporting something wrong with this documentation
+
+Open an issue on
+**[the documentation repository](https://github.com/eLifePathways/kotahi-docs/issues)**.
+This is the fastest route — issues are monitored, and they go straight onto the
+team's board.
 
 ## General enquiries and demos
 
 **[pathways@elifesciences.org](mailto:pathways@elifesciences.org)**
 
 Get in touch about running Kotahi, arranging a demo, or discussing which
-[service model](../../about/service-and-support/) fits your community.
+[service model](../../start-here/service-and-support/) fits your community.
 
 ## Reporting a problem or requesting a feature
 
@@ -40,21 +47,4 @@ Kotahi's source lives at
 branch is `staging` rather than `main` — worth knowing if you are opening a pull
 request against the software itself. This documentation site is a separate
 repository.
-:::
-
-:::caution[Contact routes need confirming before launch]
-The archived site directed everyone to `info@kotahi.community` and a community
-forum at `forum.kotahi.community`. Both are on an expired domain and are gone.
-
-Three things need checking before this page is published:
-
-1. **Is `pathways@elifesciences.org` monitored**, and by whom? A published
-   address that nobody watches is worse than no address.
-2. **Is there a replacement community forum**, or has that capability simply
-   been lost? If it is gone, say so somewhere rather than leaving people to
-   discover it.
-3. **Confirm this repository's name.** The **Edit page** links assume the site
-   lives at `eLifePathways/kotahi-docs` on the `main` branch. If it is created
-   under a different name, update `editLink.baseUrl` in `astro.config.mjs` or
-   every Edit link will 404.
 :::

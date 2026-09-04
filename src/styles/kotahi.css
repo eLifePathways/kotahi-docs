@@ -312,3 +312,20 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* --------------------------------------------------- diagrams in dark mode --- */
+/* Three of the converted images are 100% transparent line art — black or thin
+   green strokes on nothing. On a dark background they are invisible. Rather
+   than redraw them, give content images their own light backing in dark mode.
+   Opaque screenshots cover it completely, so this is invisible for them and
+   only shows behind genuinely transparent artwork. */
+:root[data-theme='dark'] .sl-markdown-content img,
+:root:not([data-theme='light']) .sl-markdown-content img {
+  background: #FFFCF6;
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) .sl-markdown-content img {
+    background: none;
+  }
+}

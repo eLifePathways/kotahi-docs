@@ -8,7 +8,9 @@
  * arrive at directly from search.
  */
 import { Image } from 'astro:assets';
-import kotahiLogo from '../assets/brand/kotahi-logo.png';
+// The Kotahi wordmark is vector, so it is served as-is rather than through
+// astro:assets — there is nothing to optimise and no raster to resize.
+import kotahiLogoUrl from '../assets/brand/kotahi-logo.svg?url';
 import pathwaysLogo from '../assets/brand/elife-pathways-logo.png';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -16,7 +18,7 @@ const href = `${base}/`;
 ---
 
 <a href={href} class="kotahi-site-title" aria-label="Kotahi documentation — home">
-  <Image src={kotahiLogo} alt="Kotahi" densities={[1, 2]} loading="eager" />
+  <img src={kotahiLogoUrl} alt="Kotahi" width="842" height="370" loading="eager" decoding="async" />
   <span class="kotahi-stewardship">
     <span>a platform from</span>
     <Image src={pathwaysLogo} alt="eLife Pathways" densities={[1, 2]} loading="eager" />

@@ -20,6 +20,11 @@ const COPY: Record<string, { icon: string; label: string; body: string }> = {
   verified: {
     icon: '✓',
     label: 'Checked',
+    // Deliberately does NOT claim "verified against a running instance". Most
+    // pages will be checked that way, but pages describing configurable
+    // capability rather than screens are correctly checked against the product
+    // instead. The sourceNote below says which was done, so the banner must not
+    // assert the stronger claim on every page.
     body: 'This page has been checked by the eLife Pathways team. See the note below for how.',
   },
   'converted-unverified': {
