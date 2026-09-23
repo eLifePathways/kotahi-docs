@@ -26,8 +26,9 @@ servers, so a triage-and-review workflow does not have to start with manual
 data entry.
 
 **Publish where you need to.** Kotahi produces the formats and endpoints
-publishing actually requires, including DOI registration and typeset PDFs, and
-interoperates with the wider open infrastructure ecosystem.
+publishing actually requires, including typeset PDFs and Crossref or DataCite
+deposits that register DOIs against your own prefix, and interoperates with the
+wider open infrastructure ecosystem.
 
 **Run your public website too.** Kotahi builds the website your readers see — the
 part Kotahi calls the CMS, now being developed as **BATS CMS**. It presents your
