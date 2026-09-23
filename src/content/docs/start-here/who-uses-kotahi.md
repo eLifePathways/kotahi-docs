@@ -30,11 +30,22 @@ Kotahi provides:
 Live instances: [submit.metaror.org](https://submit.metaror.org/) for
 submission and review, with published output on the MetaROR site.
 
-## Novel Coronavirus Research Compendium
+## Johns Hopkins Bloomberg School of Public Health
 
-**[ncrc.jhsph.edu](https://ncrc.jhsph.edu/)** — a collaboration of scientists
-and public health experts at the Johns Hopkins Bloomberg School of Public
-Health, evaluating and summarising key COVID-19 research during the pandemic.
+Two projects, run by the same team.
+
+### Bat-Com
+
+**[bat-com.org](https://bat-com.org/)** — a research group at the Bloomberg
+School curating and assessing historical and emerging research on bat virus
+spillover events, organised by viral family.
+
+Kotahi manages triage and review management for the group's assessments.
+
+### Novel Coronavirus Research Compendium
+
+**[ncrc.jhsph.edu](https://ncrc.jhsph.edu/)** — the same team's earlier project,
+evaluating and summarising key COVID-19 research during the pandemic.
 
 The NCRC team had been managing a high volume of pandemic preprints in
 spreadsheets. They moved to Kotahi for triage and review management.
@@ -47,9 +58,7 @@ Kotahi provided:
 - review management
 - export to spreadsheets
 
-At the time, NCRC still published to WordPress via those spreadsheets — this
-predated Kotahi being able to build a public website. The same group now uses that
-capability for a further project.
+At the time, NCRC published to WordPress via those spreadsheets.
 
 ## Others
 
