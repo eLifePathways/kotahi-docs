@@ -55,8 +55,10 @@ const MOVED_PAGES = {
   '/using-kotahi/manuscripts-page/': '/reference/manuscripts-page/',
   '/workflow-design/technology-supporting-people/': '/concepts/technology-supporting-people/',
   '/workflow-design/understanding-your-workflow/': '/concepts/understanding-your-workflow/',
-  '/workflow-design/workflow-notation/': '/concepts/workflow-notation/',
-  '/workflow-design/workflow-sprints/': '/concepts/workflow-sprints/',
+  '/concepts/workflow-notation/': '/concepts/understanding-your-workflow/',
+  '/concepts/workflow-sprints/': '/concepts/understanding-your-workflow/',
+  '/workflow-design/workflow-notation/': '/concepts/understanding-your-workflow/',
+  '/workflow-design/workflow-sprints/': '/concepts/understanding-your-workflow/',
 };
 
 const withBase = (p) => `${BASE_PATH ?? ''}${p}`;
