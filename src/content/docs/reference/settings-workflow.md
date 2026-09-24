@@ -9,7 +9,7 @@ sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.
 
 To reach these settings in Kotahi, choose **Settings → Configuration**.
 
-### Dashboard
+## Dashboard
 
 In Kotahi, you can change the landing page for users as the first page they arrive at after they log in.
 
