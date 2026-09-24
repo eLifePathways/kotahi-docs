@@ -7,7 +7,9 @@ reviewStatus: converted-unverified
 sourceNote: "Converted from docs.kotahi.community/getting-started/manuscripts.html."
 ---
 
-The Manuscripts page is generally only available to Kotahi **Group Manager** and **Editor** roles.
+The Manuscripts page is available to **Group Managers**, **Group Admins** and
+**Admins**. Editors do not see it — an editor works from the control page of
+each manuscript they are assigned to.
 
 :::note[Screenshot being refreshed]
 This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
