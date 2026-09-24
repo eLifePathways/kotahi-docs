@@ -35,6 +35,26 @@ This screen is being re-captured against the current Kotahi release. Until then,
 **The screen shows:** 'Crossref' settings group listing fields for journal name, abbreviated name, home page, Crossref username, password, registrant id, depositor name and depositor email, a publication type dropdown set to 'article', DOI prefix, published article location, a CC BY 4.0 licence URL, and a ticked 'Publish to Crossref sandbox' checkbox.
 :::
 
+## DataCite
+
+Kotahi can deposit to **DataCite** instead of Crossref. Either way the account
+and the prefix are yours: Kotahi sends the metadata, and the agency registers
+the DOI.
+
+DataCite needs fewer details than Crossref:
+
+- **DataCite username** and **DataCite password** — your DataCite account
+  credentials
+- **DataCite DOI prefix** — the prefix your DOIs are registered under
+- **Publish to DataCite sandbox** — a checkbox for testing against DataCite's
+  sandbox rather than the live service
+- **DataCite published article location** — the URL recorded for the published
+  article
+
+Crossref additionally asks for journal name and abbreviation, home page,
+registrant ID, depositor name and email, publication type and a licence URL.
+DataCite asks for none of those.
+
 ## Webhook
 
 This section enables you to set a webhook for publishing to an external endpoint.
