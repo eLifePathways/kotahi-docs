@@ -44,7 +44,7 @@ This architecture reduces the complexity and costs of operating diverse portfoli
 
 **A fast, modern public website**
 
-Kotahi builds your public website — the site your readers see — using static site generation rather than the traditional database-driven approach. (Kotahi calls this part the CMS, and the current version is BATS CMS.) This approach provides significant advantages in speed, security, and scalability.
+Kotahi builds your public website — the site your readers see — using static site generation rather than the traditional database-driven approach. (Kotahi calls this part the CMS.) This approach provides significant advantages in speed, security, and scalability.
 
 Compared to a database-driven site, which can become slow and vulnerable at scale, a statically generated site stays fast and robust regardless of traffic or content volume. This innovative architecture ensures publishers can manage content efficiently while providing users with a reliably fast experience. Full-text articles are published at the push of a button, and the approach can handle the demands of complex scholarly publishing both now and in the future.
 
