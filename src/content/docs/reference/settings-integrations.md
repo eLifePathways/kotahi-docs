@@ -9,7 +9,7 @@ sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.
 
 To reach these settings in Kotahi, choose **Settings → Configuration**.
 
-### Semantic Scholar
+## Semantic Scholar
 
 A checkbox setting to enable or disable the import of preprints from [Semantic Scholar](https://www.semanticscholar.org/). It sits under Configuration, so only Group Admins and Admins can change it. This feature is only implemented on the `prc` instance type, because import queries are most commonly associated with a publish, review and curate workflow, and an existing query needs to be in place to use it.
 
