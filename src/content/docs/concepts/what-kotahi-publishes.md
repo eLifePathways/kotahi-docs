@@ -1,36 +1,34 @@
 ---
 title: "What Kotahi publishes"
-description: "The types of research object Kotahi can handle, from preprints to reviewed publications."
+description: "The kinds of research object Kotahi can publish, and where it sends them."
 sidebar:
   order: 3
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/getting-started/content.html."
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/getting-started/content.html."
 ---
 
-Kotahi is highly configurable and can publish a wide variety of research outputs. Here are some of the main options:
+Kotahi publishes manuscripts, evaluations and data. These are not a fixed bundle. Publish all three together, or evaluations on their own without the manuscript they assess, or a dataset with no accompanying paper, or nothing at all.
 
-## Types of content
+## What you can publish
 
-- **Evaluations** - Review content and decision summaries from the peer review process. This could include full verbatim reviews or edited excerpts.
-- **Data** - Datasets, metadata, code, multimedia, and other supplementary files.
-- **Manuscripts** - Preprints, journal articles, conference papers, micropublications, and other scholarly documents.
+- **Manuscripts** — preprints, journal articles, conference papers, micropublications and other documents.
+- **Evaluations** — review content and decision summaries, published in full or as edited excerpts.
+- **Data** — datasets, code, multimedia and other files attached to a submission.
 
 ![Flow diagram: three boxes labelled 'Evaluation', 'Data' and 'Manuscript' on the left, each with an arrow converging on a single box labelled 'Publication' on the right.](../../../assets/screenshots/73adabf61ed7-1000w.png)
 
-## Publishing destinations
+## Where it goes
 
-- **Your own public website** - Kotahi can build and host the site your readers see, and it is customisable to fit your needs. (Kotahi calls this the CMS.)
-- **External endpoints** - Kotahi can publish to any external endpoint or system provided it can receive the data. This includes institutional repositories, preprint servers, journals, archives, social media, and more.
-- **Multiple targets** - Content can be published to your own public website, to external endpoints, or to both at once.
+**Your public website.** Kotahi builds the site your readers see.
 
-## Configuration Options
+**Crossref or DataCite.** Kotahi sends the metadata for a published item; the agency registers the DOI against your own prefix.
 
-Kotahi allows flexible configuration of publishing in various ways:
+**Hypothesis.** Preprint reviews are published as Hypothesis annotations, which is how they reach services that read from Hypothesis.
 
-- publish any combination of evaluations, data, and manuscripts or none at all
-- publish to single or multiple endpoints
-- customise metadata, identifiers, licenses, formatting, layouts, and more
+**COAR Notify.** Kotahi talks to COAR Notify repositories in both directions — a repository can send a review request into Kotahi, and Kotahi can announce the outcome back to it. [Work with COAR Notify](../../how-to/work-with-coar-notify/) covers the whole exchange.
 
-In summary, Kotahi enables publishing virtually any scholarly content anywhere through a highly configurable system.
+**A webhook.** Anything else that accepts an HTTP request: Kotahi posts to a URL you supply, using a token you supply.
 
-## Video: Kotahi Designer Discussing What Kotahi Can Publish
+An item can go to your website, to external services, or to both. Whatever you decide, the settings are under **Settings → Configuration** — this is configuration, not code.
+
+[Settings: Integrations and publishing](../../reference/settings-integrations/) lists the fields for each endpoint.
