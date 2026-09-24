@@ -13,9 +13,13 @@ Kotahi can build and host your **public website** — the site where your publis
 content appears. Content can go to that site, to external endpoints, or to both.
 
 :::note[Kotahi calls this the CMS]
-In Kotahi's menus and settings this is labelled **CMS**, and the current version of
-it is **BATS CMS**. This page uses the on-screen labels so you can follow along, but
-"CMS" and "your public website" mean the same thing here.
+In Kotahi's menus and settings this is labelled **CMS**. This page uses the
+on-screen labels so you can follow along, but "CMS" and "your public website"
+mean the same thing here.
+
+Kotahi's public-website layer has had more than one implementation. If the
+screens here do not match yours, check with your Kotahi contact which version
+your site runs.
 :::
 
 The controls are built for creating straightforward publishing sites quickly, and
