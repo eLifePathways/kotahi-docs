@@ -8,7 +8,7 @@ sourceNote: "Rewritten from the archived Case Studies page on docs.kotahi.commun
 ---
 
 Kotahi is in production with organisations running quite different publishing
-models. Two are documented here; more are in progress.
+models. A few are documented here; more are in progress.
 
 ## MetaROR
 
