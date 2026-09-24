@@ -14,8 +14,8 @@ places to look and a handful of workflow behaviours.
 
 ## The COAR Notify inbox
 
-The inbox is available to **Admin roles only** and tracks all COAR Notify
-traffic in and out of Kotahi. From it you can:
+The inbox is available to **Group Managers**, **Group Admins** and **Admins**,
+and tracks all COAR Notify traffic in and out of Kotahi. From it you can:
 
 - see a full log of incoming and outgoing messages
 - view the raw payload for any individual request
@@ -32,10 +32,12 @@ processed.
 
 ## The COAR Notify metadata tab
 
-This tab is visible to **Admin and Editor** roles and lives inside an
-individual manuscript record. It shows that manuscript's full history within
-the COAR Notify system: every request, response and status change relevant to
-it.
+This tab lives inside an individual manuscript record and shows that
+manuscript's full history within the COAR Notify system: every request,
+response and status change relevant to it.
+
+Anyone who can reach the inbox sees it. An **editor assigned to a manuscript**
+sees the tab for that manuscript, without access to the inbox as a whole.
 
 ![A manuscript record in Kotahi with the "COAR Notify Metadata" tab selected, alongside Team, Decision, Reviews, Manuscript text, Metadata and Tasks & Notifications tabs. The panel lists a single "Offer: Review" event with its timestamp.](../../../assets/coar/coar-metadata-tab.png)
 
