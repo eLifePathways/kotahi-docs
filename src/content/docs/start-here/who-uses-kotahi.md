@@ -60,6 +60,32 @@ Kotahi provided:
 
 At the time, NCRC published to WordPress via those spreadsheets.
 
+## iPlaces Alliance
+
+**[iplacesalliance.org](https://iplacesalliance.org/)** — place-based scholarly
+infrastructure, incubated at UC Berkeley's Gump South Pacific Research Station
+and developed by Metadata Game Changers with National Science Foundation
+funding.
+
+iPlaces lets field stations publish the research they make possible — project
+records, course collections, conference proceedings, sampling plans — as citable
+outputs with DOIs registered through DataCite. Each station sets its own review
+criteria, which may be scientific, legal, permitting or cultural, and station
+directors assign the reviewers.
+
+iPlaces host and develop their own deployment, and have extended the
+public-website layer for their own needs.
+
+## Psicológica
+
+**[psicologicajournal.com](https://psicologicajournal.com/)** — the flagship
+journal of the Spanish Society for Experimental Psychology (SEPEX), running a
+Diamond Open Access overlay model since 2022.
+
+Its manuscripts, data, software and peer reviews are deposited in
+**DIGITAL.CSIC**, the Spanish National Research Council's repository, which mints
+the DOI once an editor accepts the paper. Kotahi runs their review process.
+
 ## Others
 
 Kotahi is also used by eLife itself, as an extension to its existing platform
