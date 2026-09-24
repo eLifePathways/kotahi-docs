@@ -21,15 +21,17 @@ This page covers turning it on and configuring it. For day-to-day use, see
 
 You will need:
 
-- **Admin-level access** to your Kotahi instance
+- **Group Admin or Admin** access to your Kotahi instance
 - Access to the **Integrations and Publishing Endpoints** section of settings
 - Your **server URL** and **group name**, which together form your inbox
   endpoint: `https://<serverUrl>/api/coar/inbox/<groupName>`
 
 ## Step 1 — Enable COAR Notify in workflow settings
 
-COAR Notify is hidden by default and must be enabled by an administrator before
-anyone can access it.
+Whether COAR Notify starts switched on depends on your instance type. Journal
+and PRC instances have it on by default; preprint instances have it off. Either
+way, a Group Admin controls it from Configuration, and the setting turns it on
+or off for everyone.
 
 1. Log in to Kotahi and select your group.
 2. Go to **Configuration**, then the **Workflow** tab.
@@ -43,8 +45,8 @@ Once enabled, two things become visible:
 
 | Feature | Visible to |
 | --- | --- |
-| COAR Notify Inbox | Admin roles only |
-| COAR Notify Metadata tab | Admin and Editor roles |
+| COAR Notify Inbox | Group Managers, Group Admins and Admins |
+| COAR Notify Metadata tab | The above, plus editors assigned to that manuscript |
 
 ## Step 2 — Set up OAuth authentication
 
