@@ -86,6 +86,18 @@ Its manuscripts, data, software and peer reviews are deposited in
 **DIGITAL.CSIC**, the Spanish National Research Council's repository, which mints
 the DOI once an editor accepts the paper. Kotahi runs their review process.
 
+## Lifecycle Journal
+
+**[lifecyclejournal.org](https://lifecyclejournal.org/)** — a Center for Open
+Science pilot project that evaluates research across the whole research lifecycle
+rather than at the single point of publication, with community evaluators
+assessing work from several perspectives.
+
+Kotahi runs the whole process for them: document editing, PDF generation, peer
+review administration, publication, and the public website.
+
+This pilot is currently closed to new submissions.
+
 ## Others
 
 Kotahi is also used by eLife itself, as an extension to its existing platform
