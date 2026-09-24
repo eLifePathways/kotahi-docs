@@ -155,7 +155,7 @@ To know how to write this CSS first read the defaults to get an understanding an
 
 ## AI Design Studio
 
-With a focus on PDF production, utilize the studio to tweak page layouts, adjust image placements, manage widows and orphans, refine content with ease, or come up with completely new designs using the studio. Read more here; <https://www.robotscooking.com/redefining-document-design-unveiling-our-ai-powered-pdf-designer/>
+With a focus on PDF production, utilize the studio to tweak page layouts, adjust image placements, manage widows and orphans, refine content with ease, or come up with completely new designs using the studio.
 
 Add your OpenAI credentials on the Configuration>Integrations and Publishing Endpoints>OpenAI access key to activate the service.
 
