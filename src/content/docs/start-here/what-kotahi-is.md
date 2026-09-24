@@ -31,9 +31,8 @@ deposits that register DOIs against your own prefix, and interoperates with the
 wider open infrastructure ecosystem.
 
 **Run your public website too.** Kotahi builds the website your readers see — the
-part Kotahi calls the CMS, now being developed as **BATS CMS**. It presents your
-published content,
-rather than bolting a separate system onto the review engine.
+part Kotahi calls the CMS. It presents your published content rather than bolting
+a separate system onto the review engine.
 
 ## What it costs
 
