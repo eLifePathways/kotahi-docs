@@ -1,22 +1,54 @@
 ---
 title: "Technology supporting people"
-description: "Why workflow design should start with people rather than software."
+description: "What you can change in Kotahi yourself, what needs an administrator, and what needs a developer."
 sidebar:
   order: 5
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/designing-and-optimising-workflow/think.html."
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/designing-and-optimising-workflow/think.html."
 ---
 
-*You shouldn’t conform to technology. Technology should conform to you.*
+Kotahi is built to be configured rather than coded. Most of what shapes how your
+team works is a setting someone on your team can change — no release, and no
+call to us.
 
-Kotahi's core design principle is that technology should support people and processes, not that people should serve technology.
+It is worth knowing where the lines fall before you plan a workflow around them.
 
-Kotahi's core design principle is that technology should support people and processes, not that people should serve technology. The platform aims to provide adaptable infrastructure for configuring publishing operations while giving users control to optimise over time.
+## What your team changes day to day
 
-This means Kotahi supports both streamlining established operations and experimenting with innovative models. Teams can use Kotahi to make existing procedures more efficient and pilot progressive ideas in parallel.
+Anyone holding a Group Manager role or above moves manuscripts through your
+process: triaging submissions, assigning editors, running review rounds,
+producing files, and — depending on your instance type — publishing.
 
-Easy reconfiguration of components like tasks, forms, and decision screens makes iterating processes seamless. Teams can continuously adapt approaches based on data and feedback.
+No configuration is involved. This is the everyday work.
 
-With sandboxed multitenancy, Kotahi encourages trying new workflows with minimal risks. Fresh concepts can be tested without disrupting current operations.
+## What an administrator changes
 
-At its core, Kotahi recognises publishing processes should be led by your needs not ‘how technology works’.
+A **Group Admin** configures the instance itself:
+
+- Submission, review and decision **forms**
+- **Task templates** and **email templates**
+- **Users**, and the roles they hold
+- **Integrations** — Crossref or DataCite, COAR Notify, Hypothesis, webhooks
+- Your **public website** content
+- Workflow, production and notification **settings**
+
+These take effect straight away.
+
+## What needs a developer
+
+A few things sit below the settings screens:
+
+- **Your instance type** — journal, PRC or preprint — which is set in the server
+  configuration and normally fixed once chosen
+- **Creating a new group**
+- **Saving a workflow as a reusable template**
+
+That middle one matters if you want to trial a new process alongside your live
+one. Kotahi can run several groups in a single deployment with their data kept
+separate, so a pilot need not disturb what you are already doing — but the group
+itself has to be created for you.
+
+## What Kotahi will not let you do
+
+Manuscripts cannot be deleted, only archived. That is deliberate: the record of
+what was submitted and reviewed stays intact.
