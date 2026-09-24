@@ -34,4 +34,4 @@ Configuration options for sending email notifications. Each workflow type has su
 7. **Unread discussion message** - choose the email to be read when messages are remaining to be read in a chat for all users.
 8. **Immediate Notification for users @mentioned in a message** - choose the email template to be sent when a user is @ mentioned in the chat.
 
-\*\*\*\*\*Currently, only available when using the journal workflow (instance archetype)
+\*\*\*\*\*Currently, only available when using the journal workflow (instance instance type)
