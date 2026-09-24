@@ -13,7 +13,7 @@ To reach these settings in Kotahi, choose **Settings → Configuration**.
 
 ## Instance type
 
-Kotahi can be configured to meet many types of workflows and use cases (see section titled ‘Pre-configured workflows’). What is also very powerful is that Kotahi comes with some preset configurations you can choose from. We call these ‘archetypes’. Typically you cannot change this setting for a group (tenant) in Kotahi once it has been set by the administrator. However, you can create as many groups as you like, each with its own archetype. Instance types are set by a developer via the system configuration (.env) file.
+Kotahi comes with preset configurations called **instance types**. Each group (tenant) has one, and it normally cannot be changed once an administrator has set it — but you can create as many groups as you like, each with its own instance type. Instance types are set by a developer in the system configuration (`.env`) file.
 
 It is also possible to create a workflow and save it as a template but at this moment you will need a developer to do this for you.
 
