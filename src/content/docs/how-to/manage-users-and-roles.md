@@ -49,4 +49,36 @@ last online, the roles they hold, and a link to delete them.
 | All of the above across **every** group | | | ✓ |
 
 A Group Admin's permissions apply to their own group. An Admin holds the same
-permissions
+permissions everywhere.
+
+## Who can publish
+
+This depends on your instance type.
+
+- **Preprint instances** — only Group Admins can publish.
+- **Journal and PRC instances** — Group Managers and editors can publish by
+  default. A setting can block either or both. That setting sits under
+  Configuration, so only a Group Admin can change it.
+
+## Roles assigned on a manuscript
+
+**Editor** — assigned on a manuscript's control page. An editor can use the
+control and production pages **for that manuscript**. Editors do not see the
+Manuscripts page, and there is no group-wide editor role.
+
+**Reviewer** — assigned to review a manuscript. Reviewers reach the review page
+and review form, and can communicate with the editorial team. Their assignments
+appear on the Dashboard under 'To Review'.
+
+**Author** — can access and manage their own submissions, submit further
+versions, and communicate with the editorial team. Their submissions appear on
+the Dashboard under 'My Submissions'.
+
+## Making everyone an admin
+
+A setting under Configuration assigns Group Admin and Admin to every user at
+their next login. It is off by default, and it gives you a flat community
+hierarchy in which everyone can reach everything.
+
+**It cannot be undone by switching it off.** Turning the setting off stops new
+users being granted those roles, but anyone who already has them keeps them.
