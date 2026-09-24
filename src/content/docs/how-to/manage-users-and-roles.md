@@ -1,66 +1,52 @@
 ---
 title: "Manage users and roles"
-description: "Adding users, assigning roles and managing permissions in Kotahi."
+description: "The roles Kotahi uses, what each one can do, and how permissions are assigned."
 sidebar:
   order: 4
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/users.html."
+reviewStatus: verified
+sourceNote: "Rewritten September 2026 against permissions confirmed by Kotahi engineering. Replaces material converted from docs.kotahi.community/advanced-kotahi/users.html."
 ---
 
-*Manage your users and roles.*
+Kotahi has three **group roles** — Group Manager, Group Admin and Admin. They
+nest: each can do everything the role before it can, and more.
 
-Kotahi has easy to use tools to manage users.
+Editor, reviewer and author are **not** group roles. They are assignments made
+on an individual manuscript.
 
-Users are managed from Settings→Users.
+## Where users are managed
+
+Users are managed from **Settings → Users**. Reaching Settings requires Group
+Admin or Admin.
 
 :::note[Screenshot being refreshed]
-This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
+This screen is being re-captured against the current Kotahi release. Until then,
+here is what it shows.
 
-**The screen shows:** Kotahi Settings 'Users' table listing ten of 24 users, each row showing name and ORCID iD, 'Created' and 'Last Online' dates, role tags such as 'Group Manager', 'Admin' and 'User', and a 'Delete' link, with pagination below.
+**The screen shows:** Kotahi Settings 'Users' table listing ten of 24 users,
+each row showing name and ORCID iD, 'Created' and 'Last Online' dates, role
+tags, and a 'Delete' link, with pagination below.
 :::
 
-Here you see a list of all users in the system. The users are listed with the following information in columns:
+Each row shows the user's name, when they created their account, when they were
+last online, the roles they hold, and a link to delete them.
 
-- **Name** - the full name of the user (with a picture if provided by the user in their profile page)
-- **Created** - the date the user created an account
-- **Last Online** - when the user was last online
-- **Roles** - the role(s) they’re assigned
-- **Delete** - deletes the user
+## What each group role can reach
 
-The basic Kotahi roles are as follows:
+| | Group Manager | Group Admin | Admin |
+| --- | --- | --- | --- |
+| Manuscripts page — view, archive, import | ✓ | ✓ | ✓ |
+| COAR Notify inbox | ✓ | ✓ | ✓ |
+| Control page | ✓ | ✓ | ✓ |
+| Production page | ✓ | ✓ | ✓ |
+| Reports | | ✓ | ✓ |
+| Task templates | | ✓ | ✓ |
+| Configuration | | ✓ | ✓ |
+| Form builder | | ✓ | ✓ |
+| User management, including granting group roles | | ✓ | ✓ |
+| Public website | | ✓ | ✓ |
+| Any user's profile | | | ✓ |
+| Granting Admin to someone else | | | ✓ |
+| All of the above across **every** group | | | ✓ |
 
-**Admin**
-
-Admin is a global role with access to all groups. An Admin has system administration permissions and access to the Dashboard and Settings pages. Admin permissions support the configuring of groups (Configuration manager, Forms, Task templates, Email templates and CMS settings) and managing Users globally. Admins don't have permission for various editing tasks unless they are assigned as Group Managers or Editors.
-
-**Group Manager**
-
-A Group Manager has managerial permissions within a group. They can access the Dashboard, Manuscripts, Reports and Settings pages. A Group Manager can assign editors. They can also perform editorial tasks themselves even without being assigned as an editor. They also can manage users within their group.
-
-A Group Manager is the only role that has access to the Manuscripts page and has oversight of all the manuscripts within their group. This role can facilitate a curation role in support of manuscript triage, for example.
-
-Currently, this role also has access to the Production editor from the Manuscripts page.
-
-Admin users who are also assigned as Group Managers can delete any Discussion message in a given group.
-
-**Editor**
-
-Has permissions needed to access the Control page for managing the research objects they are assigned to.
-
-This includes assigning other team members, inviting reviewers, editable access to metadata and decision/evaluation data as well as the ability to edit task lists and communicate with all stakeholders.
-
-All research objects assigned are listed on the Dashboard→Manuscripts ‘I’m Editor of’ tab.
-
-**Reviewer**
-
-Has permissions needed to review the research objects they are assigned to. This includes access to the Review page and review form, and the ability to communicate with the editorial team.
-
-All reviews assigned are listed on the Dashboard→To Review tab.
-
-**Author**
-
-Can access and manage the submissions they have created or are associated with.
-
-Authors can submit multiple versions of research objects and/or datasets and communicate with the editorial team.
-
-All submissions are listed on the Dashboard→My Submissions tab.
+A Group Admin's permissions apply to their own group. An Admin holds the same
+permissions
