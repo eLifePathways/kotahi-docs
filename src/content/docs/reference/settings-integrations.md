@@ -11,7 +11,7 @@ To reach these settings in Kotahi, choose **Settings → Configuration**.
 
 ### Semantic Scholar
 
-A checkbox setting to enable/disable the import of preprints from [Semantic Scholar](https://www.semanticscholar.org/). Group Managers can select servers to import preprints/journals from. This feature is only implemented on the `prc` archetype. This is because import queries are most commonly associated with a publish, review and curate workflow, and an existing query will need to be in place to use this feature.
+A checkbox setting to enable or disable the import of preprints from [Semantic Scholar](https://www.semanticscholar.org/). It sits under Configuration, so only Group Admins and Admins can change it. This feature is only implemented on the `prc` archetype, because import queries are most commonly associated with a publish, review and curate workflow, and an existing query needs to be in place to use it.
 
 ![Configuration 'Integrations and Publishing Endpoints' tab showing the 'Semantic Scholar' group: a ticked 'Enable Semantic Scholar' checkbox, a 30-day age limit for imported manuscripts, and a publishing-servers multi-select holding arXiv, bioRxiv and ChemRxiv with an open dropdown listing further servers.](../../../assets/screenshots/ddb8fbf09d6e-1000w.png)
 
