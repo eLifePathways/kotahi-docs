@@ -13,6 +13,13 @@ content appears to readers. It reads from Kotahi over the Kotahi GraphQL API, so
 publications created in Kotahi surface on your site without anyone re-entering
 them. In Kotahi's own menus this part is labelled **CMS**.
 
+
+:::note[Which site does this apply to?]
+This page describes **BATS CMS**. Kotahi's public-website layer has had more than
+one implementation, and some sites run an earlier one. If the screens here do not
+match yours, check with your Kotahi contact which version your site uses.
+:::
+
 This page covers administering a BATS CMS site. It does not cover the Kotahi
 submission and review side — see [Using Kotahi](../../reference/dashboard/) for
 that.
