@@ -9,7 +9,7 @@ sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.
 
 To reach these settings in Kotahi, choose **Settings → Configuration**.
 
-### Emails
+## Emails
 
 Configuration for the account information through which Kotahi will send emails. Currently, only Gmail is supported. These [instructions](https://support.google.com/accounts/answer/185833?hl=en) outline the correct Gmail password to use when configuring your account.
 
