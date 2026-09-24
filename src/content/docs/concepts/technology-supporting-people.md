@@ -50,5 +50,11 @@ itself has to be created for you.
 
 ## What Kotahi will not let you do
 
-Manuscripts cannot be deleted, only archived. That is deliberate: the record of
-what was submitted and reviewed stays intact.
+Manuscripts cannot be deleted through the interface, only archived. That is
+deliberate: the record of what was submitted and reviewed stays intact.
+
+There is one exception, and it is a legal one rather than a product one. Where
+someone exercises a right to erasure — under the UK GDPR, the EU GDPR or an
+equivalent law — that obligation sits with whoever operates your instance, and
+it overrides the design. It is handled as a request, not a button. If you
+receive one, raise it with your Kotahi contact.
