@@ -65,7 +65,11 @@ Here you can set the timezone for the date picker when setting tasks.
 
 ## Reports
 
-Settings to show or hide the reports page from the menu.
+Shows or hides the Reports page in the menu.
+
+Despite its wording, this checkbox does not grant access to any role. It turns
+the Reports page on or off for everyone. Reports are available to Group Admins
+and Admins.
 
 !['Reports' settings group containing a single ticked checkbox labelled 'Group Manager and admin can access Reports', which shows or hides the Reports page in the menu.](../../../assets/screenshots/6e545a209f3d-1500w.png)
 
@@ -75,4 +79,10 @@ One interesting user setting and a misplaced API key setting
 
 !['User Management' settings group with one unticked checkbox, 'All users are assigned Group Manager and Admin roles', above the message 'You have unsaved changes.' and a 'Save' button.](../../../assets/screenshots/35b386eb8e9d-2500w.png)
 
-**All users are assigned Group Manager and Admin roles** - essentially gives you a flat community hierarchy in which all users can access all pages in the menu and see all parts of the process.
+**All users are assigned Group Manager and Admin roles** — the label is
+inaccurate: the roles granted are **Group Admin** and **Admin**. It gives you a
+flat community hierarchy in which everyone can reach every page. Roles are
+applied at each user's next login, and it is off by default.
+
+**Switching it off later does not take the roles away.** Anyone already granted
+Group Admin and Admin keeps them.
