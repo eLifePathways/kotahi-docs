@@ -1,109 +1,35 @@
 ---
 title: "Key features"
-description: "An overview of Kotahi's capabilities across submission, review, production and publishing."
+description: "What Kotahi does, across configuration, review, production and publishing."
 sidebar:
   order: 2
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/getting-started/features.html."
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/getting-started/features.html."
 ---
 
-## Key Features of Kotahi
+Kotahi is open source, and nearly everything below is a setting rather than a code change.
 
-Kotahi is more than just a journal platform—it's a comprehensive scholarly publishing platform designed to support diverse workflows. Kotahi offers customizable workflows that extend beyond traditional journals, enabling teams to collaborate and process research objects according to their specific requirements.
+## Configure it to your process
 
-**Kotahi advances publishing in three key ways:**
+- **Build your own forms.** Submission, review and decision forms are assembled in a drag-and-drop editor — add, remove and reorder fields, and attach the metadata tags your domain needs to each one. See [Build a submission form](../../how-to/build-a-submission-form/).
+- **Choose a review model.** Open, single-anonymous or double-anonymous. Reviewers can work on a shared review or submit individually, and you decide how much of it the author sees. See [Review models](../../concepts/review-models/).
+- **Set the tasks.** Task templates give every submission the same checklist, and it can be adjusted for an individual manuscript. See [Set up task templates](../../how-to/set-up-task-templates/).
+- **Write the emails.** Every notification Kotahi sends is an editable template. See [Customise email templates](../../how-to/customise-email-templates/).
+- **Keep the history.** Each new submission round creates a new version of both the manuscript and its metadata, so the trail from first draft to published article stays intact.
 
-1. **Supporting Legacy Workflows:** Kotahi can operate traditional journals while offering extensive configuration options to optimize workflows over time.
-2. **Enabling New Workflows:** Built for emerging models such as publish-review-curate (PRC) and more, Kotahi supports micropublications, curated knowledge compendiums, and other innovations.
-3. **Allowing Experimentation:** With multi-tenancy support, Kotahi enables setting up multiple teams or journals to test new workflows at no added cost. Teams can run legacy systems while experimenting with new models.
+## Produce the files
 
-Overall, Kotahi provides adaptable infrastructure to encapsulate diverse publishing models and ways of working, both current and emerging. Its configurability aims to move scholarly publishing forward.
+- **JATS XML** — tag content visually in the production editor and Kotahi converts it to validated JATS. Nobody needs to write XML.
+- **Print-ready PDFs** — typeset in the browser with [Paged.js](https://pagedjs.org/), one at a time or in batches. See [Produce a PDF](../../how-to/produce-a-pdf/).
 
-Multitenancy Supporting Diverse Use Cases
+## Publish
 
-Managing multiple scholarly publishing groups like journals, preprint servers, or preprint review communities traditionally required running separate software for each. This quickly becomes cumbersome and difficult to scale.
+Manuscripts, evaluations and data, in any combination, to your public website and to Crossref or DataCite, Hypothesis, COAR Notify or a webhook of your own. See [What Kotahi publishes](../../concepts/what-kotahi-publishes/).
 
-Kotahi resolves this issue by providing native multitenancy support for various use cases within a single integrated system. A single Kotahi installation can host any number of journals, preprint servers, or preprint review communities.
+The public website is generated as static files rather than assembled from a database on each request, so it stays fast however much you publish.
 
-Each group functions independently with its own:
+## Run more than one group
 
-- Isolated data and privacy
-- Customizable submission workflows
-- Unique look and feel
-- Publish endpoint
+A single Kotahi deployment can host several groups — journals, preprint servers, review communities — each with its own forms, workflow, appearance and publishing endpoints, and each with its data kept separate from the others. That is how you pilot a new process alongside a live one without disturbing it.
 
-**Key benefits of Kotahi’s multitenant approach include:**
-
-- Reduced software overhead, as only a single instance needs to be maintained
-- Tailored workflows for each group without conflicts
-- Easy scalability when adding new groups
-- Streamlined cross-group analytics and reporting
-- The ability to experiment with new publishing processes within one system
-
-This architecture reduces the complexity and costs of operating diverse portfolios of journals, preprint servers, and review communities. As publishers scale up their groups, new ones can be easily onboarded while retaining custom workflows.
-
-**A fast, modern public website**
-
-Kotahi builds your public website — the site your readers see — using static site generation rather than the traditional database-driven approach. (Kotahi calls this part the CMS.) This approach provides significant advantages in speed, security, and scalability.
-
-Compared to a database-driven site, which can become slow and vulnerable at scale, a statically generated site stays fast and robust regardless of traffic or content volume. This innovative architecture ensures publishers can manage content efficiently while providing users with a reliably fast experience. Full-text articles are published at the push of a button, and the approach can handle the demands of complex scholarly publishing both now and in the future.
-
-**Automated JATS Production**
-
-The Journal Article Tag Suite (JATS) XML standard allows content to be structured, exchanged, and preserved in a consistent machine-readable format. However, many publishers find JATS complex, costly, and cumbersome to implement. Kotahi aims to change this by integrating JATS production seamlessly into the publishing workflow.
-
-Kotahi sees a document as a constellation of content, primarily in the form of the manuscript text and associated metadata. Customizable submission forms in Kotahi gather comprehensive metadata upfront. The internal production editor then provides an intuitive way to prepare content for JATS export without needing direct XML skills. Users visually highlight and tag content sections, and these selections are automatically mapped to the appropriate JATS document elements. Kotahi converts the prepared manuscript and metadata into validation-checked JATS XML that complies with all specifications.
-
-By integrating JATS production into the publishing pipeline, Kotahi makes adopting JATS accessible to mainstream publishers, lowering the barrier to entry while facilitating standards compliance at scale.
-
-**Automated Production of PDF**
-
-One of Kotahi’s standout features is the ability to automatically typeset and generate print-ready PDFs with just a click. This is powered by the integration of Paged.js, an open-source library for paginating HTML content into high-quality PDF documents.
-
-As manuscripts in Kotahi are edited and stored as HTML, Paged.js can fragment the content into pages, inject sophisticated print styling, and paginate a preview within the browser. When ready, the print-perfect PDF can be saved out (or batch processed) with no manual typesetting required.
-
-This browser-based PDF generation approach enables automated workflows, allowing Kotahi to produce press-ready PDFs at scale in a fraction of the time and at little or no cost.
-
-**Drag-and-Drop Submission Form Creation**
-
-Kotahi features an intuitive drag-and-drop interface for creating submission forms, removing the need for coding knowledge or technical expertise. Users can easily add, remove, or rearrange form fields as needed. Whether working from pre-made templates or designing fully customized forms, the process is quick and user-friendly, resulting in more complete information being captured upfront, benefiting downstream teams.
-
-**Support for Any Metadata Schema**
-
-Kotahi supports submission and publication using any metadata schema, including custom schemas or niche standards. This adaptability lets publishers capture optimal metadata for their domain and needs. The drag-and-drop form builder allows any metadata tags to be attached to submission fields, enabling the capture of detailed author information and other complex data.
-
-**Tailored Peer Review Process**
-
-Kotahi provides flexibility to tailor the review process to each journal or review community’s specific needs. Different models, including open, blind, or double-blind reviews, can be configured. Reviewers can collaborate on shared reviews while also providing individual feedback if desired. Customizing the level of author participation is also supported, facilitating constructive conversations between authors and reviewers to improve manuscripts.
-
-**Real-Time Communication Tools**
-
-Kotahi incorporates real-time communication features, including live chat and video chat, to facilitate conversations as needed. All communications become visible within the platform, eliminating email clutter and streamlining collaboration.
-
-**Customizable Task Management**
-
-Kotahi incorporates advanced but customizable task management capabilities, providing an overview of tasks and workflows across the publishing lifecycle. Granular controls allow configuring task management at a per-journal or even per-manuscript level, resulting in tailored workflows for each manuscript’s unique needs.
-
-**Versioning**
-
-Kotahi supports versioning of submissions to track revision history across review and editing cycles. Each new submission round creates a new version of both the manuscript content and submission metadata, allowing tracking from initial draft to final published form.
-
-**AI-Powered Preprint Recommendations**
-
-Kotahi enables AI-powered preprint recommendations that assist curators in identifying relevant manuscripts for review. This tailored AI-matching allows curators to rapidly pinpoint the most pertinent preprints to evaluate and disseminate within their field or community.
-
-**Configurable, Customizable, and Extensible**
-
-Kotahi is highly configurable, customizable, and extensible to meet diverse publishing needs. The system allows individual configuration of workflows, review models, metadata schemas, the public website and publishing endpoints, task management, and more per group. Further customization can be achieved through integrations, plugins, and the addition of new microservices or functionality.
-
-**Microservice Architecture**
-
-Kotahi is built using a modular microservice architecture, providing benefits such as scalability, flexibility, and resiliency. As publishing needs grow and evolve, Kotahi’s microservices make scaling, upgrading, and maintenance simpler and more cost-effective.
-
-**Smooth Installation and Deployment**
-
-Kotahi offers straightforward installation and deployment using a Docker-based architecture with modular microservices that reduce complexity. The system can scale groups and content without requiring deep technical knowledge.
-
-**100% Open Source**
-
-Kotahi is published under open-source licenses, with all source code freely available. This open development model helps drive rapid innovation and collaboration, enabling publishers to fully utilize Kotahi as a strategic asset customized for their requirements.
+Creating a group is a developer task rather than a setting. See [Technology supporting people](../../concepts/technology-supporting-people/) for where the lines fall between what your team changes, what an administrator changes, and what needs a developer.
