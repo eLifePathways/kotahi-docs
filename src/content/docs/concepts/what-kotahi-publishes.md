@@ -68,6 +68,6 @@ Kotahi publishes manuscripts, evaluations and data. These are not a fixed bundle
 
 **A webhook.** Anything else that accepts an HTTP request: Kotahi posts to a URL you supply, using a token you supply.
 
-An item can go to your website, to external services, or to both. Whatever you decide, the settings are under **Settings → Configuration** — this is configuration, not code.
+An item can go to your website, to external services, or to both. Whatever you decide, the settings are under **Configuration** in the left menu — this is configuration, not code.
 
 [Settings: Integrations and publishing](../../reference/settings-integrations/) lists the fields for each endpoint.
