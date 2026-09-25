@@ -1,37 +1,53 @@
 ---
-title: "Settings: Notifications and email"
-description: "The Notifications and E-mail tab — the sending account and event notification templates."
-sidebar:
-  order: 10
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html. That single page covered every settings tab; it is split here so each tab can be verified on its own."
+title: "Settings: Email and notifications"
+description: "The Email Settings, Notification Templates and Notification Events tabs."
+sidebar: { order: 10 }
+reviewStatus: verified
+sourceNote: "Checked against Kotahi staging, September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
-To reach these settings in Kotahi, choose **Settings → Configuration**.
+Choose **Configuration** in the left menu. Three tabs cover email: **Email Settings** connects Kotahi to a mail provider, **Notification Templates** holds the emails themselves, and **Notification Events** decides when each one is sent.
 
-## Emails
-
-Configuration for the account information through which Kotahi will send emails. Currently, only Gmail is supported. These [instructions](https://support.google.com/accounts/answer/185833?hl=en) outline the correct Gmail password to use when configuring your account.
-
-:::note[Screenshot being refreshed]
-This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
-
-**The screen shows:** 'Emails' settings section with three fields: 'Gmail email address', 'Gmail sender email address' and 'Gmail password' showing a masked value.
+:::note[Screenshots being refreshed]
+These tabs are being re-captured against the current Kotahi release.
 :::
 
-## Event notifications
+## Email Settings
 
-Configuration options for sending email notifications. Each workflow type has supporting events, and the option to assign an email notification template.
+Kotahi connects to any mail provider over SMTP — SendGrid, Mailgun or your own server. Your provider's SMTP documentation supplies these values.
 
-!['Event Notifications' settings section listing template dropdowns for 'Reviewer rejects an invitation to review' (empty), 'Reviewer invitation' set to 'Reviewer Invitation', 'Submitted review' (empty), 'Submitted manuscript' (empty), 'Unread discussion message' set to 'Chat notification', and '@mentioned in a message' set to '@mention notification'.](../../../assets/screenshots/2c0567f24dc7-1000w.png)
+**Sender** — the sender name and address recipients see, for example `"Kotahi Journal" <noreply@example.com>`. Some providers also need this address registering at their end.
 
-1. **Reviewer rejects an invitation to review** - choose from the email templates for the email to be sent to the reviewer when they reject an invitation to review.
-2. **Reviewer invitation** - set the email to be sent to the reviewer when they are invited to review.
-3. **\*Submitted review** - set the email to be sent to the author when the editor has submitted a decision (accept, revise or reject) .
-4. **\*Submitted manuscript** - choose the email to be sent to the submitter when a research object is submitted.
-5. **Author proof assigned invitation** - choose this email sent to the author when invited to participate in a round of proofing.
-6. **Author proof completed and submitted feedback** - choose this email if you wish an editor (editor role assigned) to receive a notification that the author has submitted proofing feedback.
-7. **Unread discussion message** - choose the email to be read when messages are remaining to be read in a chat for all users.
-8. **Immediate Notification for users @mentioned in a message** - choose the email template to be sent when a user is @ mentioned in the chat.
+**Host** — your provider's SMTP hostname.
 
-\*\*\*\*\*Currently, only available when using the journal workflow (instance instance type)
+**Port** — the SSL port your provider uses, usually 465.
+
+**User** — the username for your mail provider account, not a Kotahi username.
+
+**Password** — the password that goes with it.
+
+**BCC** — an optional address that receives a blind copy of **every** email Kotahi sends. Useful for archiving; worth a moment's thought about who should hold that copy.
+
+### Advanced settings
+
+**Secure connection** — establishes a secure connection immediately. Normally on for port 465.
+
+**Require TLS** — only applies when Secure connection is off. Opens a plain connection and upgrades it once contact is made, which is how port 587 usually works.
+
+Leaving both off is not recommended.
+
+## Notification Templates
+
+Each template has a **Description**, a **Subject** and a rich-text **Body**.
+
+Templates are listed as **System** — the ones Kotahi ships, including author and reviewer invitations, proofing notifications and task notifications — and **Custom**, which are yours. **Create** adds a new one.
+
+## Notification Events
+
+This tab pairs an event with a template: when the event happens, that template is sent. Events are listed on the right with search and filtering, and each one can be expanded to see or set its template.
+
+Events cover the review lifecycle — invitations issued, accepted and declined, for authors, reviewers and collaborative reviewers — along with proofing and discussion activity.
+
+:::caution[A struck-through template name means it is missing]
+If an event shows its template name struck through in red, the template it points at no longer exists. Assign an existing template, or the event has nothing to send.
+:::
