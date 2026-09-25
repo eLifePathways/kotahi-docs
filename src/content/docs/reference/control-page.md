@@ -216,8 +216,7 @@ The **Tasks** section displays all tasks for the research object.
 
 !['Tasks' list with columns Title, Assignee and Duration/Due Date. Eight rows each show a drag handle and 'Done' circle, an editable title, a three-dot edit icon, an assignee dropdown holding a role or user, a duration such as '3 days' or 'None', and a 'Start' button.](../../../assets/screenshots/667ef5c2dfa2-1500w.png)
 
-The initial task list for the research object will be inherited from the task list set up in
- Settings →Tasks (see that section). It is also possible to add/delete/alter the inherited list to suit the needs of the specific research object.
+The initial task list for the research object is inherited from the task list set up under **Tasks** in the left menu. You can add, delete or alter the inherited list to suit the needs of a specific research object.
 
 Tasks can be created, edited, deleted, modified, started, and reordered from this interface.
 
