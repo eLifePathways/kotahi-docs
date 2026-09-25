@@ -1,39 +1,42 @@
 ---
 title: "Customise email templates"
-description: "Creating and editing the email templates Kotahi sends."
-sidebar:
-  order: 6
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/email.html."
+description: "Writing the emails Kotahi sends, and deciding when each one goes out."
+sidebar: { order: 6 }
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026 against the current release. Replaces material converted from docs.kotahi.community/advanced-kotahi/email.html."
 ---
 
-*Managing email templates.*
+Sending an email from Kotahi takes three things: a mail provider to send it, a template to send, and an event to send it on. Group Admins and Admins can set all three.
 
-There are many options for managing customized event-driven automated emails.
+## 1. Connect a provider
 
-You can view, edit and/or create email notification templates here. All templates appear as options to assign in the event in the Configuration manager, recipients in the Task manager and when sending an ad-hoc Notification.
+Nothing sends until Kotahi has SMTP details. See [Settings: Email and notifications](../../reference/settings-notifications/).
 
-![Kotahi 'Email Templates' page: a template list (@mention notification, Author Invitation, Chat notification, Reviewer Invitation, Task notification) beside the selected template's SUBJECT, CC and BODY fields, using Handlebars variables such as {{ currentUser }} and {{ recipientName }}.](../../../assets/screenshots/03f423e9295c-750w.png)
+## 2. Write the template
 
-Group Admins and Admins can create a new template or edit an existing template from the Settings>Email page.
+Choose **Configuration → Notification Templates**, then **Create**, or open an existing template to edit it.
 
-Email body content can be personalised using the Handlebars.js variables framework. A set of variables map to select metadata content that is either system-generated (e.g. manuscript id) or captured in a form (e.g. manuscript title).
+A template has a **Description** — how you will recognise it in a list — a **Subject**, and a **Body**.
 
-These initial variables allow for the insertion of text and hyperlinks in the body content of an email notification template e.g. Manuscript titles, sender/recipient usernames, manuscript ids etc.
+The body can carry variables that Kotahi fills in when it sends. They use the Handlebars syntax:
 
-A list of variables that can be used include:
+| Variable | What it inserts |
+| --- | --- |
+| `{{ manuscriptTitle }}` | The manuscript's title |
+| `{{ manuscriptNumber }}` | Its short ID |
+| `{{ senderName }}` | The name of whoever triggered the email |
+| `{{ recipientName }}` | The name of whoever receives it |
+| `{{ authorName }}` | The author's name |
+| `{{{ loginLink }}}` | A link to log in to your group |
+| `{{{ manuscriptLink }}}` | A link to the manuscript |
+| `{{{ manuscriptTitleLink }}}` | The title, as a link to the manuscript |
 
-1. Manuscript title - {{ manuscriptTitle }}
-2. Group login link - {{{ loginLink }}}
-3. Sender name - {{ senderName }}
-4. Recipient name - {{ recipientName }}
-5. Author name - {{ authorName }}
-6. \*Manuscript link (URL) - {{{ manuscriptLink }}}
-7. Manuscript title link (`submission.link`) - {{{ manuscriptTitleLink }}}
-8. Manuscript number (`shortId`) - {{ manuscriptNumber }}
+**`{{{ manuscriptLink }}}` resolves differently for each recipient.** An editor is taken to the Control page, a reviewer to the Review page, an author to the Submission page. One variable, the right destination for whoever opens the email.
 
-\*This link is adapted based on the receiver's role. If an editor receives an email notification that includes a link to a Manuscript in Kotahi - the link will point to the Control panel. If the recipient is a reviewer, the link will direct the user to the Review page and the author to the Submission page.
+Links use three braces rather than two.
 
-Group Admins and Admins can manually add a CC from the Emails>Email template>CC field, allowing someone apart from the primary recipient to receive a copy of the email. Selecting the checkbox will CC all editors assigned to a manuscript into the email notification when sent.
+## 3. Send it on an event
 
-![Email template editor with the CC area outlined in red: a CC field containing an example address and an unticked checkbox 'Automatically add manuscript editors in 'cc' when sending this email (if applicable)', above the Handlebars body text and an 'Update' button.](../../../assets/screenshots/3195d5074159-1000w.png)
+Choose **Configuration → Notification Events**, find the event, and assign your template to it.
+
+Until an event has a template, nothing is sent when it occurs.
