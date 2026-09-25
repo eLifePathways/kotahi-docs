@@ -39,15 +39,15 @@ Filter by manuscript status;
 
 **Accepted -** a manuscript ‘Accept’ decision has been submitted by an editor.
 
-This status is only applicable when using the special form field type ‘Verdict’. This field is used as a default Decision form field when using the instance type.
+This status only applies when the Decision form includes the special **Verdict** field type.
 
 **Rejected -** a manuscript ‘Reject’ decision has been submitted by an editor.
 
-This status is only applicable when using the special form field type ‘Verdict’. This field is used as a default Decision form field when using the instance type.
+This status only applies when the Decision form includes the special **Verdict** field type.
 
 **Revise -** a manuscript ‘Revise’ decision has been submitted by an editor. This will allow an author to submit a new version of the manuscript.
 
-This status is only applicable when using the special form field type ‘Verdict’. This field is used as a default Decision form field when using the instance type.
+This status only applies when the Decision form includes the special **Verdict** field type.
 
 **Revising -** an author has created a new version and in the process of editing the submission.
 
@@ -68,7 +68,7 @@ You can select or bulk select manuscripts from the Manuscripts page. Once you ha
 
 ## Automated ingestion of submissions
 
-Kotahi can be configured to import manuscripts automatically from the Settings→Configuration→Manuscripts page. If the Manuscripts page displays a refresh button as below, this is for the automated batch ingestion of submissions. Generally, this is used for the ingestion of preprints from various sources but the functionality could be used for batch ingestion of other types of material.
+Kotahi can be configured to import manuscripts automatically. If the Manuscripts page displays a refresh button as below, automated batch ingestion is switched on for your group. This is generally used to ingest preprints from various sources, but it can be used for batch ingestion of other material.
 
 :::note[Screenshot being refreshed]
 This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
