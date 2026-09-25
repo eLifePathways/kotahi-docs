@@ -1,68 +1,40 @@
 ---
 title: "Frequently asked questions"
-description: "Common questions about Kotahi's licensing, hosting, extensibility and support."
+description: "Short answers to the questions people ask before adopting Kotahi."
 sidebar:
-  order: 11
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/getting-started/summary.html."
+  order: 11
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/getting-started/summary.html."
 ---
 
-## Summary
+## Is Kotahi free?
 
-**What is Kotahi?**
+The software is. Kotahi is open source under the MIT licence — no licence fees and no per-seat charge. What costs money is having someone else run or configure it for you. See [Service and support](../../start-here/service-and-support/).
 
-Kotahi is an open source publishing platform designed to modernise workflows for journals, preprint servers, preprint review communities, and other models. It provides a flexible system to support diverse publishing needs.
+## Can we host it ourselves?
 
-**What are the key features of Kotahi?**
+Yes, and some organisations do. You can also have eLife Pathways host it for you, or run the whole publishing operation. See [Service and support](../../start-here/service-and-support/).
 
-Some key features include configurable workflows, multitenancy, automated JATS and PDF production, drag-and-drop form building, support for any metadata schema, tailored peer review, real-time communications, task management, and more.
+## Do we need a developer?
 
-**What publishing models can Kotahi support?**
+Not for day-to-day work, and not for most configuration — forms, workflow, task and email templates, users and integrations are all settings someone on your team can change. A few things do need a developer, including creating a new group. See [Technology supporting people](../../concepts/technology-supporting-people/).
 
-Kotahi can support traditional journals, preprint servers, publish-review-curate models, overlay journals, micropublications, and more. Its flexibility enables many emerging publishing paradigms.
+## What happens to our content if we stop working with eLife Pathways?
 
-**How does Kotahi support preprint review?**
+It stays yours, and so does the software. Kotahi is open source, so there is no licence to lose — you can take it and your content elsewhere whenever you want.
 
-Kotahi enables the import of preprints, AI-powered recommendations, custom review forms, collaborative annotation, grouped reviews, and flexible publishing of reviews or curated collections.
+## Does Kotahi only do preprints?
 
-**What review models does Kotahi offer?**
+No. It runs traditional journals as well as preprint servers, publish-review-curate communities, and models that fit neither. See [Why Kotahi exists](../../concepts/why-kotahi-exists/).
 
-Kotahi supports single-blind, double-blind, open, collaborative, community self-review, multiple iterative rounds, and combinations of these models.
+## Can one installation run more than one journal?
 
-**How does the Kotahi form builder work?**
+Yes. A single deployment hosts several groups, each with its own forms, workflow, appearance and publishing endpoints, and each with its data kept separate. See [Key features](../../start-here/key-features/).
 
-The intuitive drag-and-drop form builder allows creation of submission, reviewer, and decision forms without coding. Forms can be designed from templates or customised.
+## Who else uses Kotahi?
 
-**How does Kotahi produce JATS XML?**
+See [Who uses Kotahi](../../start-here/who-uses-kotahi/) for the organisations we can name and what each of them uses it for.
 
-Kotahi provides a simple production editor for users to visually tag document sections. These are automatically mapped to JATS XML elements on export.
+## Where is the code?
 
-**How does Kotahi create PDFs?**
-
-Kotahi leverages Paged.js to automatically paginate manuscripts into print-perfect PDFs with professional typesetting and formatting.
-
-**How does task management work in Kotahi?**
-
-Advanced but customisable task management allows configuring workflows at a per-group or per-manuscript level with reminders, actions, and invites.
-
-**What multitenancy capabilities does Kotahi offer?**
-
-Kotahi enables hosting multiple isolated journals, preprint servers, or review groups within one installation while retaining custom workflows for each.
-
-**How is Kotahi designed to be customisable?**
-
-Kotahi is highly configurable through its settings and also extensible via plugins, APIs, and microservices. eLife Pathways offers customisation services.
-
-**What benefits does Kotahi's architecture provide?**
-
-The microservices architecture enables independent scaling and updating of components along with overall flexibility and resilience.
-
-**How difficult is it to install Kotahi?**
-
-Kotahi utilises Docker and microservices to simplify deployment. While sysadmin skills help, the goal is accessible self-service installation. There are third-party hosting and publishing services vendors that can also help you with Kotahi hosting.
-
-**Is Kotahi open source?**
-
-Yes, Kotahi is 100% open source software published under the MIT license. The code is freely available on GitLab.
-
-## Video: Kotahi FAQs
+On GitHub, at [eLifePathways/Kotahi](https://github.com/eLifePathways/Kotahi).
