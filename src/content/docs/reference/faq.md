@@ -1,8 +1,7 @@
 ---
 title: "Frequently asked questions"
 description: "Short answers to the questions people ask before adopting Kotahi."
-sidebar:
-  order: 11
+sidebar: { order: 11 }
 reviewStatus: rewritten
 sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/getting-started/summary.html."
 ---
