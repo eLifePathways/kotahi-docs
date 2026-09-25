@@ -15,8 +15,7 @@ on an individual manuscript.
 
 ## Where users are managed
 
-Users are managed from **Settings → Users**. Reaching Settings requires Group
-Admin or Admin.
+Users are managed from **Users** in the left menu, which requires Group Admin or Admin.
 
 :::note[Screenshot being refreshed]
 This screen is being re-captured against the current Kotahi release. Until then,
