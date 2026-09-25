@@ -1,32 +1,39 @@
 ---
 title: "The Production page"
-description: "The Production page: preparing accepted content for publication."
-sidebar:
-  order: 5
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/production.html. The archived source page also carried the whole of the Kotahi configuration reference — 2,411 words duplicated verbatim from the Configuring Kotahi page. That duplication has been removed here; the settings material lives on the Settings reference page."
+description: "The Production page — preparing accepted content for publication."
+sidebar: { order: 5 }
+reviewStatus: rewritten
+sourceNote: "Rewritten September 2026 against the current release. Converted from docs.kotahi.community/advanced-kotahi/production.html; the configuration reference that page also carried now lives on the Settings reference pages."
 ---
 
-## Introduction to the Production page
+The Production page is where content is prepared for publication and where author proofing happens. It is available to Group Managers, Group Admins and Admins.
 
-The Kotahi Production interface is designed to radically reduce the cost and time for producing various formats such as HTML, PDF and JATS (XML). It can also be used for author proofing.
+Open it from the **Manuscripts** page: each row carries a **Production** link in the Actions column, beside Control and View. It is available whatever stage the manuscript has reached.
 
-![Kotahi Production page with an editable manuscript, a formatting toolbar, a left structure panel listing 'Front Matter', 'Abstract' and 'Funding Group' JATS tagging tools, a 'Download' button, and a footer reading '0 comments and suggestions'.](../../../assets/screenshots/67af1d786206-2500w.png)
+:::note[Screenshot being refreshed]
+This screen is being re-captured against the current Kotahi release.
+:::
 
-The interface is simple but powerful. In the production editor, you will see the manuscript displayed. This is entirely editable. On the right we see a download dropdown menu.
+## The tabs
 
-![Detail of the Production page with everything dimmed except the 'Download' button and its dropdown arrow in the top right corner, highlighting where export formats are chosen.](../../../assets/screenshots/f4283d61710e-1000w.png)
+**Editor** — the manuscript itself, editable in place. If the submitted file is a type Kotahi's editor cannot render, this shows *No supported view of the file*.
 
-From this dropdown menu, you can select PDF, JATS and HTML. PDF is generated using Paged.js (see documentation). JATS is created automatically by Kotahi and validated. HTML comes straight from the content displayed in the editor.
+**History** — earlier states of the manuscript. How often a version is taken is set by **Interval to automatically save a manuscript version in minutes** on the [Production settings tab](../../reference/settings-production/).
 
-If you wish to improve the granularity of the JATS files you produce, you can use the tools on the left menu (see JATS documentation in this manual).
+**PDF template**, **PDF CSS**, **PDF assets** and **PDF metadata** — the Paged.js HTML template, its stylesheet, the fonts and images it draws on, and the shortcodes that pull article data into it. [Produce a PDF](../../how-to/produce-a-pdf/) covers all four in detail.
 
-You can also access the PDF (Paged.js) editor, which can be used to alter the CSS or template before exporting to PDF. Although accessed at the manuscript level, changes here will reflect all manuscripts exported as a PDF.
+**Ai Design Studio** — marked Beta. Select part of the page, describe the change you want, and it adjusts the styling. Needs an OpenAI key set under [Integrations and publishing](../../reference/settings-integrations/).
 
-## Where the rest of this is documented
+## Check Payload
 
-- [Producing a PDF](../../how-to/produce-a-pdf/) — the Paged.js templates, CSS
-  and assets, and the AI Design Studio.
-- [Citation tools](../../how-to/check-citations/) — reference handling.
-- [Settings reference](../../reference/settings-general/) — every
-  configuration option, including the Production settings tab.
+**Check Payload**, top right, opens a picker of the registration APIs available to your group so you can check the metadata payload before it is deposited.
+
+:::caution[The PDF template is not per-manuscript]
+You reach these tabs from inside a single manuscript, but the template, CSS and assets apply to **every** manuscript exported as a PDF in that group.
+:::
+
+## Related
+
+- [Produce a PDF](../../how-to/produce-a-pdf/) — templates, CSS, assets and metadata shortcodes.
+- [Check and improve citations](../../how-to/check-citations/) — reference handling.
+- [Settings: Production](../../reference/settings-production/) — the citation and version-history settings behind this screen.
