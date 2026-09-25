@@ -6,7 +6,7 @@ reviewStatus: verified
 sourceNote: "Checked against the product September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
-To reach these settings in Kotahi, choose **Settings → Configuration**.
+Choose **Configuration** in the left menu, then the **General** tab.
 
 ![Kotahi Configuration page on the 'General' tab, alongside 'Workflow', 'Production', 'Integrations and Publishing Endpoints' and 'Notifications and E-mail' tabs, showing an 'Instance Type' dropdown set to 'Journal' and 'Group Identity' fields for Brand name, Title, Description, ISSN and Contact, with a 'Save' button.](../../../assets/screenshots/95ff97de272a-1000w.png)
 
