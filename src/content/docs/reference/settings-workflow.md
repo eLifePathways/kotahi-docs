@@ -54,7 +54,9 @@ This is more useful than it first appears. A field you add in the submission for
 
 **Editors can edit submitted discussion form field posts** — the same, for posts in the discussion form fields.
 
-**Editors can delete submitted reviews** — lets an editor remove a submitted review.
+**Editors can delete submitted reviews** — lets an editor remove a submitted review. 
+
+All three are **off by default**. They exist for small communities where one person may hold several roles at once — an author who is also an editor and a reviewer — and somebody needs to be able to untangle that. Outside that case, leaving them off keeps the review record as the reviewer submitted it.
 
 **Group Managers can Publish articles/reviews** and **Editors can Publish articles/reviews** — who may publish, alongside what your instance type allows. See [Manage users and roles](../../how-to/manage-users-and-roles/).
 
