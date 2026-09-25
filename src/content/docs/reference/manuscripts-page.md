@@ -88,7 +88,7 @@ This screen is being re-captured against the current Kotahi release. Until then,
 **The screen shows:** 'Group Manager discussion' chat panel opened beside the Manuscripts list, with date-separated messages, timestamps, a video-camera icon, a 'Hide Chat' button and a message field with 'Send'.
 :::
 
-The chat also two very powerful features - rich text (including math) and @mentions. In addition, video chat is available. Clicking on the camera icon displayed will open a video chat room.
+The chat supports rich text, including mathematical notation, and @mentions.
 
 ### Rich Text
 
