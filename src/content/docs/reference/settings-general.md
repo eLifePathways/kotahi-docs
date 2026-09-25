@@ -1,10 +1,9 @@
 ---
 title: "Settings: General"
 description: "The General configuration tab — instance type and group identity."
-sidebar:
-  order: 6
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html. That single page covered every settings tab; it is split here so each tab can be verified on its own."
+sidebar: { order: 6 }
+reviewStatus: verified
+sourceNote: "Checked against the product September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
 To reach these settings in Kotahi, choose **Settings → Configuration**.
@@ -13,37 +12,35 @@ To reach these settings in Kotahi, choose **Settings → Configuration**.
 
 ## Instance type
 
-Kotahi comes with preset configurations called **instance types**. Each group (tenant) has one, and it normally cannot be changed once an administrator has set it — but you can create as many groups as you like, each with its own instance type. Instance types are set by a developer in the system configuration (`.env`) file.
+Kotahi comes with preset configurations called **instance types**. Each group (tenant) has one, and it normally cannot be changed once an administrator has set it — but you can create as many groups as you like, each with its own instance type. Instance types are set by a developer in the system configuration (`.env`) file. See [Technology supporting people](../../concepts/technology-supporting-people/) for what else sits below the settings screens.
 
-It is also possible to create a workflow and save it as a template but at this moment you will need a developer to do this for you.
+The instance types are:
 
-Instance types at the moment include:
-
-1. **journal** - a typical Journal workflow
-2. **prc** - a PRC workflow
-3. **preprint1** - submit, review and publish from a single form
-4. **preprint2** - submit, review and publish from a single form, and import preprints
+1. **journal** — a typical journal workflow
+2. **prc** — a publish-review-curate workflow
+3. **preprint1** — submit, review and publish from a single form
+4. **preprint2** — as preprint1, and can import preprints
 
 ## Group identity
 
-Enables you to set basic branding for your group.
+Basic branding for your group.
 
 ![Kotahi 'Group Identity' configuration screen with a 'Brand name' field, 'Brand primary colour' and 'Brand secondary colour' swatches, and Logo and Favicon uploads showing the current files with 'Remove' links.](../../../assets/screenshots/7b4fd9de7311-2500w.png)
 
-**Brand name** - this enables you to set the name of the group. The group name is displayed in a dropdown menu at login time for installations with multiple groups
+**Brand name** — the name of the group. It appears in the dropdown at login on installations with more than one group.
 
-**Title** - is the title of your publication
+**Title** — the title of your publication.
 
-**Description** - a brief summary outlining the purpose of your publication
+**Description** — a brief summary of what your publication is for.
 
-**ISSN** - is an 8-digit code used to identify newspapers, journals, magazines and periodicals of all kinds and on all media–print and electronic
+**ISSN** — your publication's ISSN, if it has one.
 
-**Contact** - contact details can be inserted as plain text
+**Contact** — contact details, as plain text.
 
-**Brand primary color** - used for the left hand menu, some buttons, and title texts
+**Brand primary colour** — used for the left-hand menu, some buttons and title text.
 
-**Brand secondary color** - used for additional highlighting
+**Brand secondary colour** — used for additional highlighting.
 
-**Logo** - the logo for the group login page
+**Logo** — the logo on the group login page.
 
-**Favicon** - icon displayed on your browser tab
+**Favicon** — the icon shown on the browser tab.
