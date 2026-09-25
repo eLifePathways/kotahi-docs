@@ -59,3 +59,49 @@ This is more useful than it first appears. A field you add in the submission for
 **Group Managers can Publish articles/reviews** and **Editors can Publish articles/reviews** — who may publish, alongside what your instance type allows. See [Manage users and roles](../../how-to/manage-users-and-roles/).
 
 **Control pages visible to editors** — which tabs an editor sees on the Control page: Team, Decision, Reviews, Manuscript text, Metadata, Tasks & Notifications, and COAR Notify Metadata.
+
+## Submission
+
+**Allow an author to submit a new version of their manuscript at any time** — off means an author waits for a new review round before submitting a new version. On means they can submit at any point, including mid-review. Used where the review process and the submission system are separate, as in preprint review.
+
+## Submission page
+
+**Title** and **Description** — the heading and introductory text an author sees on the submission page. The description is a rich-text field.
+
+**Choose a submission view** — how an author submits. One of:
+
+- Allow an author to upload a manuscript file only
+- Allow an author to upload a manuscript file with a form
+- Allow an author to submit a form
+- Allow an author to submit a form and access a blank editor
+
+**Prevent Group Manager from altering a manuscript that they have authored post-submission** — stops someone holding Group Manager rights from editing their own submission once it has been made.
+
+## Review page
+
+**Reviewers can see the Decision form data** — whether a reviewer can see the decision and evaluation information.
+
+## Discussion channels
+
+Four settings control who can see the discussion attached to a manuscript:
+
+- Hide discussion from Group Admins and Group Managers
+- Hide discussion from editors, reviewers and authors
+- Hide discussion from authors only
+- Hide discussion from reviewers only
+
+## Task Manager
+
+**Set timezone for Task Manager due dates** — the timezone used by the date picker when setting due dates on tasks.
+
+## Reports
+
+**Group Manager and admin can access Reports** — shows or hides the Reports page in the menu.
+
+Despite its wording, this checkbox does not grant access to any role. It turns the Reports page on or off for everyone. Reports are available to Group Admins and Admins.
+
+## User management
+
+**All users are assigned Group Manager and Admin roles** — the label is inaccurate: the roles granted are **Group Admin** and **Admin**. It gives you a flat community hierarchy in which everyone can reach every page. Roles are applied at each user's next login, and it is off by default.
+
+**Switching it off later does not take the roles away.** Anyone already granted Group Admin and Admin keeps them.
