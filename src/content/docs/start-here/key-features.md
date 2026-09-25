@@ -11,7 +11,7 @@ Kotahi is open source, and nearly everything below is a setting rather than a co
 
 ## Configure it to your process
 
-- **Build your own forms.** Submission, review and decision forms are assembled in a drag-and-drop editor — add, remove and reorder fields, and attach the metadata tags your domain needs to each one. See [Build a submission form](../../how-to/build-a-submission-form/).
+- **Build your own forms.** Submission, review and decision forms are assembled in one builder — add, remove and reorder fields, and attach the metadata tags your domain needs to each one. See [Build your forms](../../how-to/build-your-forms/).
 - **Choose a review model.** Open, single-anonymous or double-anonymous. Reviewers can work on a shared review or submit individually, and you decide how much of it the author sees. See [Review models](../../concepts/review-models/).
 - **Set the tasks.** Task templates give every submission the same checklist, and it can be adjusted for an individual manuscript. See [Set up task templates](../../how-to/set-up-task-templates/).
 - **Write the emails.** Every notification Kotahi sends is an editable template. See [Customise email templates](../../how-to/customise-email-templates/).
