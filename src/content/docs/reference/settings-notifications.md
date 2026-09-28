@@ -47,7 +47,3 @@ Templates are listed as **System** — the ones Kotahi ships, including author a
 This tab pairs an event with a template: when the event happens, that template is sent. Events are listed on the right with search and filtering, and each one can be expanded to see or set its template.
 
 Events cover the review lifecycle — invitations issued, accepted and declined, for authors, reviewers and collaborative reviewers — along with proofing and discussion activity.
-
-:::caution[A struck-through template name means it is missing]
-If an event shows its template name struck through in red, the template it points at no longer exists. Assign an existing template, or the event has nothing to send.
-:::
