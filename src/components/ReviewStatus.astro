@@ -9,9 +9,15 @@
  *
  * Two deliberate decisions about what this does NOT show:
  *
- * 1. Nothing at all on `new` and `rewritten` pages. A reader does not need
+ * 1. No trust banner on `new` and `rewritten` pages. A reader does not need
  *    telling that a page was written normally — the absence of a warning is
  *    the signal. Only pages where trust is in question get a box.
+ *
+ *    `appliesTo` is different: it is a scope note, not a trust signal, and a
+ *    reader on an older release needs it whatever the page's status. It used
+ *    to be printed only inside the trust banner, which meant the three pages
+ *    carrying it — all `new` — were the three pages that could never show it.
+ *    It now renders on its own when there is no banner to sit inside.
  *
  * 2. `sourceNote` is never rendered. It is provenance for whoever maintains
  *    the file, and it stays in the frontmatter and in git history where that
@@ -49,7 +55,7 @@ const meta = COPY[status];
 ---
 
 {
-  meta && (
+  meta ? (
     <div class={`review-status review-status--${status}`} role="note">
       <span class="review-status__icon" aria-hidden="true">{meta.icon}</span>
       <span>
@@ -58,5 +64,14 @@ const meta = COPY[status];
         {appliesTo && <> Applies to Kotahi <strong>{appliesTo}</strong>.</>}
       </span>
     </div>
+  ) : (
+    appliesTo && (
+      <div class="review-status" role="note">
+        <span class="review-status__icon" aria-hidden="true">i</span>
+        <span>
+          Applies to Kotahi <strong>{appliesTo}</strong>.
+        </span>
+      </div>
+    )
   )
 }
