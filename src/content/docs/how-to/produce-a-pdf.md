@@ -1,178 +1,142 @@
 ---
 title: "Produce a PDF"
-description: "Generating a typeset PDF from Kotahi content using Paged.js."
-sidebar:
-  order: 9
-reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/pdf.html."
+description: "How Kotahi turns a manuscript into a typeset PDF, and where to change the way it looks."
+sidebar: { order: 9 }
+reviewStatus: rewritten
+sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kotahi/pdf.html. Tab names corrected to the current Production interface, verified against staging on 25 September. The previous version described five tabs under their Paged.js names and did not mention History. It also documented a Download button in the Production interface; the current release shows Check Payload in that position, so no download control is described here — with Vukile from 30 September. Carried over and still unverified: that the templating language is Nunjucks; that .js files in the assets panel run at PDF generation; and the behaviour of the AI Design Studio, which is marked Beta in the product."
 ---
 
-*Kotahi’s Innovative Approach to PDF. Including the new AI Design Studio.*
+*Turning a manuscript into a typeset PDF, and changing how that PDF looks.*
 
-Kotahi introduces a streamlined PDF production interface. With the default template, generating a polished PDF is as easy as a single click.
+Kotahi stores manuscripts as HTML. To produce a PDF it runs that HTML through
+**[Paged.js](https://www.pagedjs.org/)**, an open-source pagination engine
+developed by Coko, which applies your stylesheet and breaks the content into
+pages.
 
-Kotahi also provides sophisticated customization tools for full control over the final PDF's look and feel. While primarily designed for publishing journal articles on the Kotahi CMS, the PDF can be hosted anywhere and the tools enable creating PDFs out of any combination of data, manuscripts, and evaluations.
+With the default template you do not need to do anything — the PDF is produced
+for you. Everything below is for changing how it looks.
 
-This chapter explains how to leverage Kotahi's flexibility. It covers creating article PDFs step-by-step, from simple defaults to elaborate custom designs. Whether you need a basic article download or a complex tailored layout, Kotahi equips you to produce the PDF you envision.
+## How a PDF is made
 
-## PagedJS
+<svg viewBox="0 0 720 210" role="img" aria-labelledby="pdfflow-title pdfflow-desc" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;margin-block:1.5rem;">
+  <title id="pdfflow-title">How Kotahi produces a PDF</title>
+  <desc id="pdfflow-desc">An HTML template and a stylesheet are combined, passed to the Paged.js engine, and paginated into a finished PDF. You control the first stage; Kotahi handles the rest.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="8" y="46" width="196" height="76" rx="8"/>
+    <rect x="262" y="46" width="196" height="76" rx="8" fill="var(--sl-color-accent-low)"/>
+    <rect x="516" y="46" width="196" height="76" rx="8"/>
+    <path d="M212 84 H252 M244 78 L252 84 L244 90"/>
+    <path d="M466 84 H506 M498 78 L506 84 L498 90"/>
+  </g>
+  <g fill="currentColor" font-size="16" text-anchor="middle" font-weight="600">
+    <text x="106" y="82">HTML template</text>
+    <text x="106" y="104">+ CSS</text>
+    <text x="360" y="92">Paged.js</text>
+    <text x="614" y="92">PDF</text>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <text x="106" y="152">What you edit</text>
+    <text x="360" y="152">Paginates and typesets</text>
+    <text x="614" y="152">What readers get</text>
+  </g>
+</svg>
 
-To understand Kotahi’s PDF production, it helps to know the underlying process. Articles are stored internally as HTML. To generate print-quality PDFs, Kotahi utilizes the open-source Paged.js engine (<https://www.pagedjs.org/>).
+So customising a PDF comes down to two things: a **template** that says what
+goes on the page and in what order, and a **stylesheet** that says how it
+looks. The template can pull real values out of Kotahi — the title, the
+authors, the DOI — so one template serves every manuscript.
 
-Developed by Coko for typographic control, Paged.js applies CSS styling and typesetting logic to paginate HTML content into PDF.
+Paged.js documents its own CSS rules in detail, and that documentation is
+better than anything we could repeat here. Start with
+[the Paged.js documentation](https://pagedjs.org/documentation/) once you know
+where Kotahi keeps things.
 
-Kotahi PDF customization boils down to creating a HTML template and adjusting CSS styling rules. This enables independent and granular control over page dimensions, typography, colors, layout elements, and more prior to output. From a high level the process looks like this:
+## Where the controls are
 
-![Three-stage flow diagram: a box labelled 'HTML + CSS' with an arrow to a box labelled 'PagedJS', which in turn points to a box labelled 'PDF', showing how Kotahi paginates styled HTML into print-ready PDF.](../../../assets/screenshots/dfa154578b00-2500w.png)
+Open a manuscript's **Production** page from the Manuscripts list. It has seven
+tabs:
 
-For full docmentation on the CSS rules that can be used to control the struture, look, and feel of the PDF using PagedJS please see the PagedJS documentation (<https://pagedjs.org/documentation/>).
+| Tab | What it is for |
+| --- | --- |
+| **Editor** | Writing and structuring the article itself, managing images, citations and JATS XML |
+| **History** | Previous versions of the manuscript |
+| **PDF template** | The HTML template that lays out the PDF |
+| **PDF CSS** | The stylesheet applied when the PDF is generated |
+| **PDF assets** | Logos, images, fonts and scripts the template can use |
+| **PDF metadata** | The list of values you can pull in from Kotahi, with the code to paste |
+| **Ai Design Studio (Beta)** | Changing the design by describing what you want |
 
-## The Production Interface Tabs
+## The template
 
-You will see several tabs in the Production Interface (Kotahi 2.2 and later).
+**PDF template** holds the HTML. Kotahi ships a working default, and reading it
+is the fastest way to understand the conventions — it is a complete, functioning
+example rather than a skeleton.
 
-![Kotahi Production interface on the 'Editor' tab, with 'PagedJs Css', 'PagedJs Html Template', 'PagedJs Template Assets' and 'PagedJs Metadata' tabs alongside it, a 'Download' button, an article structure panel listing Front matter, Title, Abstract, Funding and Keywords, and the article text in the editor.](../../../assets/screenshots/f81e91e9baa1-750w.png)
+The templating language is **[Nunjucks](https://mozilla.github.io/nunjucks/)**,
+which adds variables, loops and conditions to ordinary HTML.
 
-Kotahi’s PDF production interface contains several tabs:
+**The head** works as it would on any web page: the `lang` attribute drives
+hyphenation, and links to custom fonts or stylesheets go here. Anything you
+link must exist in **PDF assets** first.
 
-**Editor** - The content editing environment for writing, structuring articles, managing images/media, enabling citations, and producing JATS XML.
+Scripts are the exception. Because Paged.js runs on the server, `<script>` tags
+in the head are not executed. To run your own JavaScript, upload it to **PDF
+assets** instead — Kotahi picks up any `.js` file there when the PDF is
+generated. Paged.js documents
+[hooks and custom JavaScript](https://pagedjs.org/documentation/10-handlers-hooks-and-custom-javascript/)
+for this.
 
-**PagedJS CSS** - A dedicated CSS editor for fine-tuning visual styles like colors, fonts, alignments applied to the PDF content. The CSS also controls PDF page elements like page numbers etc.
-
-**PagedJS HTML Template** - The template used for creating the HTML that will in turn be used by PagedJS to create PDF.
-
-**PagedJS Template Assets** - Storage for all supporting assets like logos, images, and custom fonts to include in the PDF.
-
-**PagedJS Metadata** - Shortcodes referencing data from the Kotahi system to dynamically pull into the PDF, like publication date, ethical declarations, authors, publisher etc.
-
-Together these tools provide end-to-end control over the PDF output - from editing content with supporting assets, to structuring the document format, styling and customizing the visual presentation as PDF, and injecting dynamic article data elements.
-
-To effectively leverage Kotahi's PDF engine, four key points to understand are:
-
-1. The **PagedJS HTML Template** acts as the overarching blueprint dictating the structure and arrangement of all PDF content.
-2. The template can mix static content with variables pulling dynamic article data from Kotahi's database through **PagedJS Metadata** shortcodes.
-3. The linked **PagedJS CSS** provides precise control over styling and typographic treatments applied to template contents when generating the PDF.
-4. Together, the HTML template handles content while the CSS controls visual presentation and style - in combination they allow crafting polished, customizable PDF layouts.
-
-With this foundation established, the production flow is:
-
-A) Arrange content blocks in the HTML template
-
-B) Use PagedJS Metadata to inject dynamic article data
-
-C) Style and refine visual design through cascading CSS
-
-D) Export to PDF
-
-If you understand these key points and high level process, you understand a lot.
-
-## Making a Template
-
-Templates can be made using the **PagedJS HTML Template** tab.
-
-![The 'PagedJs Html Template' tab showing a numbered code editor with the template's head section: doctype, html lang attribute, meta charset, a title drawn from the article metadata variable, MathJax configuration, and Paged.js polyfill and font links.](../../../assets/screenshots/c6dd12e103cc-1000w.png)
-
-Kotahi includes a default **PagedJS HTML Template** demonstrating best practices for structuring PDF-destined content. When first accessing the template editor, this pre-loaded template serves both as a starting point for modification and a functional example for dissecting key features.
-
-As the foundation driving PDF rendering, scrutinizing the default template lends vital insight into creating optimized templates from scratch. It illustrates conventions for employing:
-
-- Metadata shortcodes to incorporate dynamic article data
-- Modular components to manage distinct content blocks
-- Structural HTML elements like headers, paragraphs, and divisions
-- Styles for custom CSS treatments
-
-Lets walk through an example template from head to toe and point out some of the important features as we go.
-
-The templating language used in Kotahi is [Nunjucks](https://mozilla.github.io/nunjucks/). It’s easy to understand and edit, and yet, it’s still capable of complex manipulations, loops and filters to generate the content in every way needed.
-
-### Head
-
-The head of template contains information that is typical for a HTML page. The lang property will define the language used for typesetting engines hyphenation and character encoding.
-
-![Template code lines 1 to 44 in the 'PagedJs Html Template' editor: the head block with html lang, meta charset and viewport, a title from the article metadata, MathJax config, commented-out Paged.js polyfill and preview scripts, font preload links, and stylesheet and script includes.](../../../assets/screenshots/d8c3f7dfe94a-1500w.png)
-
-**Loading Scripts**
-
-Since we’re using Paged.js server side rendering, the existing scripts in the head tag will not be used. Instead, to load custom Paged.js scripts in Kotahi, you need to add them as external assets. Kotahi will try to use any file with a .js extension from the asset panel. Those script will then run when you’ll download the pdf.
-
-You can experiment with all kinds of scripts (for example a Q-code generator) and we recommend reading the PagedJS documentation on how to do this. You can find everything about hooks and custom javascript for paged.js here: <https://pagedjs.org/documentation/10-handlers-hooks-and-custom-javascript/>
-
-**Linking External Assets**
-
-The head is the place to add link to custom fonts that exist in the Template Asset tab, or link to external stylesheets or custom fonts to make them available when the PDF generation will happen. There is no need to preload any images in the HTML, as [Paged.js](https://pagedjs.org/) will generate the PDF only after loading all images.
-
-Careful script and link management in the head are vital first steps in crafting fully-functional templates.
-
-### Body
-
-The body information is where the content is layed out in the template:
+**The body** is where the layout lives — a title page, the article, whatever
+your design needs.
 
 ![Template code lines 45 to 85: the body's titlepage section with the publisher logo image, a research level and topic list loop, an h1 title, formatted authors, and a margin aside holding funding, received date, DOI, journal title and journal slug variables.](../../../assets/screenshots/f2d1bf042ad0-750w.png)
 
-You can see here how HTML elements and template variables are combined to lay the content out in the template. You can see this clearly in this simple example:
+HTML and template variables sit side by side. In this example an ordinary
+paragraph carries an `id` for the CSS to target, and the shortcode between the
+tags pulls the journal's name out of Kotahi:
 
 ![Close-up of three template lines: an opening paragraph tag with id 'journalTitle', the Nunjucks shortcode for the journal title on the line between, then the closing paragraph tag.](../../../assets/screenshots/da3e02662210-1500w.png)
 
-In this example you can see a paragraph tag with an **id** used by the CSS for styling. Inbetween the P tags we see a template shortcode which draws in data from the Kotahi database. In this case, the variable is pulling in the name of the Journal that publishes the article.
+The same pattern brings in the article body, and loops repeat a block for every
+item in a list — every topic, every author.
 
-In the following example you can see how the source of the article itself is brought into the template:
+**PDF metadata** lists everything available this way. Each field is shown
+beside its shortcode with a copy icon, so you can paste it straight into the
+template rather than typing it.
 
-![Close-up of template lines showing a section element with class 'article' wrapping the shortcode that pulls the article's own body content into the template.](../../../assets/screenshots/53d1a8e33f93-750w.png)
+## Assets
 
-There is also conditional logic in some of the lines using variables:
+**PDF assets** is where fonts, images and scripts are uploaded. Files can be
+uploaded in batches, and each one has a copy link that produces the correct
+line to paste into the template — a `<link>` for a font, an `<img>` for an
+image, and so on.
 
-![Three lines of template code: a ul element with id 'topicList' containing a Nunjucks for-loop that outputs each of the article's topics as a list item, closed by endfor.](../../../assets/screenshots/fc43b8b4b012-750w.png)
+You do not need to preload images. Paged.js waits for them before generating
+the PDF.
 
-There is also conditional logic in some of the lines using variables:
+## CSS
 
-![The 'PagedJs Metadata' tab listing metadata fields such as Manuscript Number, Type of Research Object, Topics, Title, DOI, Author names, Abstract and Funding, each paired on the right with its shortcode and a copy icon.](../../../assets/screenshots/718f0c5d874c-750w.png)
+**PDF CSS** holds the stylesheet. As with the template, Kotahi's default is the
+best starting point: read it first, then use the Paged.js documentation for
+anything it does not already show you. Page-level furniture such as page
+numbers is controlled here too, not in the template.
 
-The list of items on the left of the page is the actual shortcode you need to use. Clicking the page icon wiht the ‘+’ will copy the shortcode to the clipboard that you can copy and paste into the template.
+## Ai Design Studio (Beta)
 
-## PagedJS Template Assets
+The Design Studio changes the PDF's design from a description rather than by
+editing CSS — adjusting layout, image placement, or widows and orphans.
 
-You can upload assets you wish to use in the template via the assets tab.
+It needs an OpenAI key. Choose **Configuration** in the left menu, then the
+**Integrations and Publishing Endpoints** tab, and add it under **AI Design
+Studio & AI Assistant**.
 
-![The 'PagedJs Template Assets' tab showing a 'Drag and drop your files here' upload area above a table of two uploaded assets with columns for ID, Created and Name, plus copy links 'Create Css', 'Create Script', 'Create Image', 'Create Font' and 'Create URL', and Delete.](../../../assets/screenshots/22b954aa4019-1500w.png)
-
-In this tab you can upload any kind of assets but the three main types are:
-
-1. **Scripts** - JavaScripts that will be used to render content or for scripts that hook into the PagedJS (to extend PagedJS functionality, see the PagedJS documentation for more information about this — <https://pagedjs.org/documentation/10-handlers-hooks-and-custom-javascript/>)
-2. **Images** - images such as logos or partner logos etc can be uploaded to the asset interface.
-3. **Fonts** - any fonts you wish to be used for rendering the PDF should be uploaded here.
-
-Batch uploading of assets is possible.
-
-All items listed can be easily included into the template by clicking on the appropriate ‘Copy’ link. This will copy to the clipboard the appropriate information to paste into the template.
-
-## PagedJS CSS
-
-The PagedJS CSS tab is where you can edit the CSS:
-
-![The 'PagedJs Css' tab of the Production interface, showing an editable stylesheet with rules for maths node error states, an 'Inline Math' section styling inline maths, and the start of a 'Block Math' section.](../../../assets/screenshots/16c041e4af81.png)
-
-To know how to write this CSS first read the defaults to get an understanding and then also consult the PagedJS documentation.
-
-## AI Design Studio
-
-With a focus on PDF production, utilize the studio to tweak page layouts, adjust image placements, manage widows and orphans, refine content with ease, or come up with completely new designs using the studio.
-
-Add your OpenAI credentials on the Configuration>Integrations and Publishing Endpoints>OpenAI access key to activate the service.
-
-![Configuration 'Integrations and Publishing Endpoints' tab scrolled to show 'Publishing webhook reference', 'Kotahi APIs' tokens and 'COAR Notify' fields, with an 'AI Design Studio' section highlighted containing an empty 'OpenAI access key' field, and a 'Save' button noting unsaved changes.](../../../assets/screenshots/56ef2281718c-1500w.png)
-
-You also have controls to display content (left column), PDF preview (right column).
-
-![Top of the 'AI Design Studio' tab, marked Beta, beside the 'Editor (read-only)', 'PDF template', 'PDF CSS', 'PDF assets' and 'PDF metadata' tabs, with an AI prompt box reading 'Type here how your article should look...' and a green arrow pointing to the ticked 'Content' and 'PDF Preview' display checkboxes.](../../../assets/screenshots/238ff1331115.png)
-
-In the lefthand column; select an area (element) by clicking on the screen.
+Select an element in the content column on the left, and the PDF preview on the
+right shows the result.
 
 ![AI Design Studio split view: in the left content column the article title is selected, outlined in green and tagged 'Title' and 'no individual styles', with 'Selection: Title' shown in the bar; the right column previews the same title and abstract as typeset PDF output.](../../../assets/screenshots/2e8f7c83df91-2500w.png)
 
-Insert a prompt into the AI chat editor...
-
-![The AI Design Studio prompt bar with the typed instruction 'Change title text colour to green', a send arrow and undo and redo controls, and the 'Content', 'PDF Preview' and 'Chat History' display checkboxes on the right.](../../../assets/screenshots/b8d64b62ae43-750w.png)
-
-and see the result.
+Then describe the change you want.
 
 ![Kotahi Production editor with the 'AI Design Studio' tab open, a prompt box reading 'Type here how your article should look...', a confirmation reading 'The text colour of the title has been changed to green', and the title rendered green in both the editor and the PDF preview.](../../../assets/screenshots/50673cfba5fb-1500w.png)
+
+Undo and redo are available, and a chat history records what was asked for.
