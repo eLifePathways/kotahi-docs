@@ -68,12 +68,15 @@ in the submission form settings when the group is set up.
 
 ### Manuscript text
 
-The manuscript itself, where the submission has one.
+The manuscript itself — where the submission has one, and where Kotahi can
+display it. Of the types the upload screen accepts, only **docx** is converted
+into editable text. The others are stored and can be downloaded, but they do
+not open here.
 
-A submission started with **Submit a URL instead** has no file, and this tab
-reports that the file cannot be displayed. That message appears both when there
-is no file and when there is one Kotahi cannot render, so it does not on its own
-tell you which has happened.
+A submission started with **Submit a URL instead** has no file at all, and this
+tab reports that the file cannot be displayed. The same message appears whether
+there is no file or a file Kotahi cannot render, so it does not on its own tell
+you which has happened.
 
 ## Submitting
 
