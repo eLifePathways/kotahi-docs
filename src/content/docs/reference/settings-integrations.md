@@ -77,17 +77,31 @@ Input a token to access the `unreviewedPreprints` API and no other queries.
 
 ## COAR Notify
 
-Kotahi can receive messages from [COAR's Notify service](https://www.coar-repositories.org/notify/). Authors can submit a manuscript to a 3rd party server and request a review from a group in Kotahi. Selected server IP addresses can be inserted (as comma-separated variables) and whitelisted - Kotahi can only receive requests from servers that are whitelisted.
+Kotahi can receive messages from [COAR's Notify service](https://www.coar-repositories.org/notify/).
+A repository tells Kotahi that a manuscript is there and requests a review from
+a group. The request creates a manuscript on the Manuscripts page, identifiable
+by the Notify logo in the title text.
 
-!['COAR Notify' settings group containing a single empty text field labelled 'List of repository IPs allowed access', where whitelisted server addresses are entered as comma-separated values.](../../../assets/screenshots/8cdf93394518.png)
+**COAR Notify auth token** — how a repository authenticates with your Kotahi.
+A **Refresh** button issues a new one.
 
-A request results in a manuscript being imported and displayed on the Manuscripts page. Manuscripts imported via COAR Notify are identifiable by the Notify logo in the title text.
-
-:::note[Screenshot being refreshed]
-This screen is being re-captured against the current Kotahi release. Until then, here is what it shows.
-
-**The screen shows:** Manuscripts page listing five submissions in a table of Manuscript number, Title, Created, Updated, Status, Labels and Author columns, with a red arrow pointing to a manuscript carrying an 'UNSUBMITTED' status and a green 'COAR NOTIFY' label marking it as imported via COAR Notify.
+:::note[The IP allowlist is deprecated]
+Earlier releases restricted access by listing repository IP addresses as a
+comma-separated list in a field on this tab. The auth token replaces it.
 :::
+
+**Sciety Inbox URL** — where Kotahi sends an *Announcement: Review* when a
+manuscript is published, so that the review is picked up by
+[Sciety](https://sciety.org/). eLife's production instance posts to
+`https://inbox-sciety-prod.elifesciences.org/inbox`. It is a Sciety-specific
+field today; it may be widened to any COAR Notify inbox in future.
+
+## Local Contexts
+
+**Local Contexts Api Key** — credentials for
+[Local Contexts](https://localcontexts.org/), which supplies Traditional
+Knowledge and Biocultural Labels for Indigenous communities' material. It was
+built for **iPlaces** and is in use there.
 
 ## AI Design Studio
 
