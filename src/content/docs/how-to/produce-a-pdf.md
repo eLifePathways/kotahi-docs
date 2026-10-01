@@ -66,6 +66,16 @@ tabs:
 | **PDF metadata** | The list of values you can pull in from Kotahi, with the code to paste |
 | **Ai Design Studio (Beta)** | Changing the design by describing what you want |
 
+## Getting a copy of the file
+
+The Production page has a **Download** control, but it appears only when there
+is something to download. It is rendered when the manuscript has manuscript
+text — so a submission with no uploaded file, or one whose authors were never
+given an editor to write in, shows no Download control at all.
+
+This is worth knowing before you go looking for it: if it is not there, the
+likeliest reason is that the manuscript in front of you is empty.
+
 ## The template
 
 **PDF template** holds the HTML. Kotahi ships a working default, and reading it
