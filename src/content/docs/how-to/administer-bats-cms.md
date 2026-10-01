@@ -1,34 +1,35 @@
 ---
-title: "Administer BATS CMS"
-description: "Administering a BATS CMS site: signing in, managing team members, publications, categories, page content, users and settings."
+title: "Administer the CMS built for BATS"
+description: "Administering the CMS built for BATS: signing in, managing team members, publications, categories, page content, users and settings."
 sidebar:
   order: 12
 reviewStatus: new
-appliesTo: "BATS CMS as at June 2026"
-sourceNote: "Generalised from an internal Kotahi Admin Training Guide, June 2026."
+appliesTo: "CMS for BATS, as at June 2026"
+sourceNote: "Generalised from an internal Kotahi Admin Training Guide, June 2026. Reworded on 1 October 2026: the page previously called this system 'BATS CMS', which is internal shorthand rather than a product name — it is one customer's implementation, not a general Kotahi capability. The slug was deliberately left unchanged: no reader reaches this page by typing the URL, so renaming it would cost a redirect for no benefit. The homepage card linking here as 'Your public website' remains the open problem and is a positioning decision, not a documentation one."
 ---
 
-**BATS CMS** builds your **public website** — the site where your published
+:::caution[This page is for BATS administrators]
+It describes the CMS **built for BATS** — one customer's implementation, not a
+general Kotahi capability. Kotahi's public-website layer has had more than one
+implementation and some sites run an earlier one. If you are not a BATS
+administrator, this page almost certainly does not describe your site; check
+with your Kotahi contact which version you have.
+:::
+
+**The CMS** builds your **public website** — the site where your published
 content appears to readers. It reads from Kotahi over the Kotahi GraphQL API, so
 publications created in Kotahi surface on your site without anyone re-entering
 them. In Kotahi's own menus this part is labelled **CMS**.
 
-
-:::note[Which site does this apply to?]
-This page describes **BATS CMS**. Kotahi's public-website layer has had more than
-one implementation, and some sites run an earlier one. If the screens here do not
-match yours, check with your Kotahi contact which version your site uses.
-:::
-
-This page covers administering a BATS CMS site. It does not cover the Kotahi
+This page covers administering that CMS. It does not cover the Kotahi
 submission and review side — see [Using Kotahi](../../reference/dashboard/) for
 that.
 
 :::note[Two systems, one platform]
 **Kotahi** handles submission and peer review: authors submit, editors manage
-review, reviewers give feedback. **BATS CMS** handles the public-facing
-website: what visitors see. They are connected but administered separately,
-with separate logins.
+review, reviewers give feedback. **The CMS** handles the public-facing website:
+what visitors see. They are connected but administered separately, with separate
+logins.
 :::
 
 ## Signing in to the admin panel
