@@ -66,6 +66,15 @@ tabs:
 | **PDF metadata** | The list of values you can pull in from Kotahi, with the code to paste |
 | **Ai Design Studio (Beta)** | Changing the design by describing what you want |
 
+:::note[Only Word files open in the editor]
+The submission screen accepts pdf, epub, zip, docx and latex, but only **docx**
+is converted into editable content — Kotahi parses it with XSweet, and it is
+that converted text you see on the **Manuscript text** and **Editor** tabs. The
+other types are stored rather than converted. Where the group's submission form
+has an **Attached manuscript** field, editors and reviewers can download the
+original file from there.
+:::
+
 ## Getting a copy of the file
 
 The Production page has a **Download** control, but it appears only when there
