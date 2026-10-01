@@ -28,7 +28,10 @@ Click **+**. A row appears with three fields.
 **Assignee** — who is expected to do it.
 
 **Duration in days** — how long the task should take. New rows start at
-**None**, meaning no duration is set.
+**None**, meaning no duration is set. Where a duration is set, the task arrives
+on a manuscript with a due date.
+
+There is no save button. The builder saves as you type.
 
 ![Task Template Builder listing template tasks in columns headed 'Title', 'Assignee' and 'Duration in days' — entries such as 'Assign handling editor' (Editor, 3 days), 'Review submission' (Editor, 1) and 'Publish' (Editor, None) — each row with a drag handle and an ellipsis menu.](../../../assets/screenshots/c6eeec203d2b-1000w.png)
 
