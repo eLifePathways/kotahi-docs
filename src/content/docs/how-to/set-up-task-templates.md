@@ -43,9 +43,17 @@ The three-dot menu at the right of a row offers **Edit** and **Delete**.
 
 ## What the template does and does not do
 
-The template sets the **starting** list. An individual manuscript's tasks can
-then be changed without touching the template, so a submission that needs an
-extra step can have one.
+The template sets the **starting** list. When a manuscript is created its tasks
+are **copied** from the template, and from that moment the two are independent.
+
+That has a consequence worth knowing before you edit: **changing the template
+does not change manuscripts that already exist.** A step you add today appears
+on everything submitted from today, and on nothing already in progress. If a
+manuscript in flight needs the new step, add it to that manuscript directly.
+
+It works the other way round too — an individual manuscript's tasks can be
+changed without touching the template, so a submission that needs an extra step
+can have one.
 
 Keep the template to steps that apply to everything you handle. Anything that
 only applies sometimes is better added to the manuscript that needs it.
