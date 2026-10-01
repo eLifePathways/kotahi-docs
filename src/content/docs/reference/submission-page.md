@@ -54,6 +54,18 @@ has already been submitted.
 date and time. It is there so the submission has a name before anyone has typed
 one. Replace it with the real title.
 
+:::caution[Check the wording your form shows authors]
+The seeded submission forms carry text written for particular customers years
+ago. The `prc` seed still announces that *Aperture is now accepting Research
+Object Submissions*; the `preprint1` and `preprint2` seeds have their own
+equivalents. It is the first thing an author reads, and it names an
+organisation that is almost certainly not yours.
+
+A future release replaces the seeded text with a neutral *Please fill out the
+form below to complete your submission.* Until that ships, change it yourself
+in the submission form settings when the group is set up.
+:::
+
 ### Manuscript text
 
 The manuscript itself, where the submission has one.
