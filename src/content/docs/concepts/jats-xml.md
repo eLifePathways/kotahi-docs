@@ -48,9 +48,9 @@ than simply emitting XML and assuming it is correct.
 
 ## Where it goes
 
+
 JATS is what Kotahi sends when it deposits your content. The metadata that
-reaches **Crossref**, **DataCite** and the **Astromaterials Data Archive** is
-built from it.
+reaches **Crossref** and **DataCite** is built from it.
 
 So for most groups JATS is not something you handle directly. You tag the
 article, and Kotahi produces and deposits the XML as part of publishing. See
