@@ -3,7 +3,7 @@ title: "Produce a PDF"
 description: "How Kotahi turns a manuscript into a typeset PDF, and where to change the way it looks."
 sidebar: { order: 9 }
 reviewStatus: rewritten
-sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kotahi/pdf.html. Tab names corrected to the current Production interface, verified against staging on 25 September. The previous version described five tabs under their Paged.js names and did not mention History. It also documented a Download button in the Production interface; the current release shows Check Payload in that position, so no download control is described here — with Vukile from 30 September. Carried over and still unverified: that the templating language is Nunjucks; that .js files in the assets panel run at PDF generation; and the behaviour of the AI Design Studio, which is marked Beta in the product."
+sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kotahi/pdf.html. Tab names corrected to the current Production interface, verified against staging on 25 September. The previous version described five tabs under their Paged.js names and did not mention History. The Download control and the editor's supported file types were confirmed by Vukile on 30 September 2026: Download renders only where the manuscript has manuscript text, and only docx is parsed by XSweet into the editor. Carried over and still unverified: that the templating language is Nunjucks; that .js files in the assets panel run at PDF generation; and the behaviour of the AI Design Studio, which is marked Beta in the product."
 ---
 
 *Turning a manuscript into a typeset PDF, and changing how that PDF looks.*
