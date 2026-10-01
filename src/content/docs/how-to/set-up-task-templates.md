@@ -39,6 +39,8 @@ Add as many tasks as you need using the **+** below the last row. Drag the
 handle at the left of a row to reorder them — the list runs top to bottom, so
 the order on this screen is the order of your workflow.
 
+The three-dot menu at the right of a row offers **Edit** and **Delete**.
+
 ## What the template does and does not do
 
 The template sets the **starting** list. An individual manuscript's tasks can
