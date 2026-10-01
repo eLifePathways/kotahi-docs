@@ -3,7 +3,7 @@ title: "JATS XML"
 description: "What JATS is, why publishers need it, and what Kotahi does with it."
 sidebar: { order: 4 }
 reviewStatus: new
-sourceNote: "Written 29 September 2026 from the Kotahi source — packages/server/services/jatsexport/ and packages/server/controllers/jats.controllers.js — and from ProductionWaxEditorConfig.js for the tagging tools. No page on JATS previously existed. Deliberately does not describe how to obtain a copy of the JATS file: the code shows JATS being produced and deposited, but no download control was found, which is the same gap as the missing Download button on the Production page. With Vukile from 30 September; revise this page when he answers. The schema version, the validation step and the list of handled elements are all read from source and can be relied on."
+sourceNote: "Written 29 September 2026 from the Kotahi source — packages/server/services/jatsexport/ and packages/server/controllers/jats.controllers.js — and from ProductionWaxEditorConfig.js for the tagging tools. No page on JATS previously existed. Still deliberately does not describe how to obtain a copy of the JATS file. Asked of Vukile on 30 September 2026; he could not reproduce an export, and recorded that Yannis had generated a JATS retrieval link earlier. The expected route is Manuscripts page, Production, Download, JATS — unverified, and not stated here until someone has watched it work. ADA was named on this page beside Crossref and DataCite and was cut on 1 October: it is bespoke work built for Astromat, not a general integration. The schema version, the validation step and the list of handled elements are read from source and can be relied on."
 ---
 
 *The XML format scholarly publishing runs on, and what Kotahi does with it.*
