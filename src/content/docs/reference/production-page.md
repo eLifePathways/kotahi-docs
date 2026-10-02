@@ -16,7 +16,7 @@ This screen is being re-captured against the current Kotahi release.
 
 ## The tabs
 
-**Editor** — the manuscript itself, editable in place. If the submitted file is a type Kotahi's editor cannot render, this shows *No supported view of the file*.
+**Editor** — the manuscript itself, editable in place. If the submitted file is a type Kotahi's editor cannot render, this shows *Unsupported file uploaded, or editor has not been enabled*.
 
 **History** — earlier states of the manuscript. How often a version is taken is set by **Interval to automatically save a manuscript version in minutes** on the [Production settings tab](../../reference/settings-production/).
 
