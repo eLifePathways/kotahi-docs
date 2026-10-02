@@ -98,9 +98,7 @@ Four settings control who can see the discussion attached to a manuscript:
 
 ## Reports
 
-**Group Manager and admin can access Reports** — shows or hides the Reports page in the menu.
-
-Despite its wording, this checkbox does not grant access to any role. It turns the Reports page on or off for everyone. Reports are available to Group Admins and Admins.
+**Show Reports option in the menu** — shows or hides the Reports page for everyone. It grants nothing: Reports are available to Group Admins and Admins whether or not this is on.
 
 ## User management
 
