@@ -24,13 +24,13 @@ The **New Submission** screen offers a choice.
 **Upload Manuscript** takes a file, by drag and drop or by clicking to browse.
 The accepted types are listed on screen: **pdf, epub, zip, docx and latex**.
 
-**Submit a URL instead** is for work that already exists somewhere else — a
-preprint, for example.
+**Skip manuscript upload, and proceed to the submission form** is for work that
+already exists somewhere else — a preprint, for example. It creates the
+submission straight away with no file attached and opens the form.
 
-:::note[What "Submit a URL instead" does]
-It does not ask you for a URL. It creates the submission straight away with no
-file attached and opens the form, where you add the link in whichever field
-your group's form provides for it — often the DOI field.
+:::note[Where does the link go?]
+Nothing on this screen asks for one. Add it in whichever field your group's form
+provides — often the DOI field.
 :::
 
 ## The submission record
