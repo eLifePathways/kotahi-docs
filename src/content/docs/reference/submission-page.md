@@ -73,10 +73,10 @@ display it. Of the types the upload screen accepts, only **docx** is converted
 into editable text. The others are stored and can be downloaded, but they do
 not open here.
 
-A submission started with **Submit a URL instead** has no file at all, and this
-tab reports that the file cannot be displayed. The same message appears whether
-there is no file or a file Kotahi cannot render, so it does not on its own tell
-you which has happened.
+A submission made without a file has no manuscript to show, and this tab reports
+*Unsupported file uploaded, or editor has not been enabled*. Neither of those is
+what actually happened — there is simply no file — so the message does not tell
+you which case you are in.
 
 ## Submitting
 
