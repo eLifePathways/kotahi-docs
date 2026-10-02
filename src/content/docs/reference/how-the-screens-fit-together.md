@@ -48,7 +48,7 @@ Kotahi is a set of connected screens. This is how they fit together. The three m
 2. **Submission page** — where an author supplies the metadata and files for a new submission. See [Submission page](../../reference/submission-page/).
 3. **Manuscripts page** — a configurable list of every research object in the group, available to Group Managers, Group Admins and Admins. See [Manuscripts page](../../reference/manuscripts-page/).
 4. **Control page** — where review rounds, tasks and decisions are coordinated for one manuscript. An editor works here, on the manuscripts they have been assigned. See [Control page](../../reference/control-page/).
-5. **Review page** — where a reviewer reads the submission and writes their review.
+5. **Review page** — where a reviewer reads the submission and writes their review. See [Review page](../../reference/review-page/).
 6. **Production page** — where publication-ready files are prepared, including PDFs and author proofing. See [Production page](../../reference/production-page/).
 7. **Settings** — configuration for the group. See [Settings: general](../../reference/settings-general/).
 8. **Public website** — where you build and edit the site your readers see. See [Publish through the CMS](../../how-to/publish-through-the-cms/).
