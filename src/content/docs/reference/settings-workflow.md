@@ -102,6 +102,6 @@ Four settings control who can see the discussion attached to a manuscript:
 
 ## User management
 
-**All users are assigned Group Manager and Admin roles** — the label is inaccurate: the roles granted are **Group Admin** and **Admin**. It gives you a flat community hierarchy in which everyone can reach every page. Roles are applied at each user's next login, and it is off by default.
+**All users are assigned Admin and Group Admin roles** — gives you a flat community hierarchy in which everyone can reach every page. Roles are applied at each user's next login, and it is off by default.
 
 **Switching it off later does not take the roles away.** Anyone already granted Group Admin and Admin keeps them.
