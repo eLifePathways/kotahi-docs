@@ -62,3 +62,6 @@ jobs:
           # Raises the GitHub API rate limit so the ~35 github.com links on the
           # site don't get throttled into false failures.
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish the report even when the check fails
+        if: always()
+        run: cat lychee/out.md >> "$GITHUB_STEP_SUMMARY"
