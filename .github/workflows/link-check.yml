@@ -1,0 +1,64 @@
+# Checks every link on the built site — internal and external.
+#
+# Deliberately NOT part of deploy.yml. An external site going down is not a
+# reason to stop publishing a documentation fix, so this runs on its own
+# schedule and never gates a deploy.
+#
+# Runs Monday mornings and on demand. GitHub emails the repository owner when
+# a scheduled workflow fails, which is how a broken link gets noticed.
+#
+# It checks dist/, not the Markdown source. Relative links in the source look
+# wrong because a page is served at a directory URL (/concepts/jats-xml/), so
+# ../../reference/x/ is correct there and resolves one level differently in the
+# file tree. Checking the built output is the only way to get this right.
+name: Link check
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+        env:
+          SITE_URL: https://kotahi-docs.elifepathways.org
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # --no-progress        quieter logs
+          # --accept             999 is LinkedIn's "no bots"; 403 is common for
+          #                      sites that block CI user agents and is not
+          #                      evidence the page is gone
+          # --max-concurrency    be a polite visitor to small scholarly sites
+          # --exclude-all-private  skip localhost and internal addresses
+          args: >-
+            --no-progress
+            --accept 200,206,403,999
+            --max-concurrency 8
+            --timeout 30
+            --retry-wait-time 5
+            --max-retries 2
+            --exclude-all-private
+            --root-dir "$(pwd)/dist"
+            'dist/**/*.html'
+          fail: true
+          # Raises the GitHub API rate limit so the ~35 github.com links on the
+          # site don't get throttled into false failures.
+          token: ${{ secrets.GITHUB_TOKEN }}
