@@ -3,6 +3,7 @@ title: "Settings: General"
 description: "The General configuration tab — instance type and group identity."
 sidebar: { order: 6 }
 reviewStatus: verified
+appliesTo: "release 2026.09.17-0"
 sourceNote: "Checked against the product September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
