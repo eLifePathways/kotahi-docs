@@ -31,24 +31,31 @@ last online, the roles they hold, and a link to delete them.
 
 ## What each group role can reach
 
-| | Group Manager | Group Admin | Admin |
-| --- | --- | --- | --- |
-| Manuscripts page — view, archive, import | ✓ | ✓ | ✓ |
-| COAR Notify inbox | ✓ | ✓ | ✓ |
-| Control page | ✓ | ✓ | ✓ |
-| Production page | ✓ | ✓ | ✓ |
-| Reports | | ✓ | ✓ |
-| Task templates | | ✓ | ✓ |
-| Configuration | | ✓ | ✓ |
-| Form builder | | ✓ | ✓ |
-| User management, including granting group roles | | ✓ | ✓ |
-| Public website | | ✓ | ✓ |
-| Any user's profile | | | ✓ |
-| Granting Admin to someone else | | | ✓ |
-| All of the above across **every** group | | | ✓ |
+Each role includes everything the one before it can reach.
+
+**Group Manager**
+
+- Manuscripts page — view, archive, import
+- COAR Notify inbox
+- Control page
+- Production page
+
+**Group Admin** — all of the above, plus:
+
+- Reports
+- Task templates
+- Configuration
+- Form builder
+- User management, including granting group roles
+- Public website
+
+**Admin** — all of the above, plus:
+
+- Any user's profile
+- Granting Admin to someone else
 
 A Group Admin's permissions apply to their own group. An Admin holds the same
-permissions everywhere.
+permissions everywhere, across every group.
 
 ## Who can publish
 
