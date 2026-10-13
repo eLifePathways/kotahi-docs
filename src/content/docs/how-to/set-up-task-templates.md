@@ -3,6 +3,7 @@ title: "Set up task templates"
 description: "Creating a default task list that every new manuscript inherits."
 sidebar: { order: 5 }
 reviewStatus: verified
+appliesTo: "release 2026.09.17-0"
 sourceNote: "Rewritten 28 September 2026 against staging (prc). The previous version described the per-manuscript task list — notification recipients, email templates, send timing, Start/Pause/Done — which is a different screen reached from a manuscript rather than the Task Template Builder. That content is queued for the Control page under #411. Confirmed by Vukile on 30 September 2026: a new manuscript does inherit the template; the builder saves automatically; Duration in days produces a due date; and changes to the template do not reach manuscripts already created, because the tasks are copied at creation. The three-dot row menu was confirmed from the interface on 1 October 2026 as Edit and Delete. Still unconfirmed: what the Assignee dropdown lists."
 ---
 
