@@ -77,7 +77,7 @@ Input a token to access the `unreviewedPreprints` API and no other queries.
 
 ## COAR Notify
 
-Kotahi can receive messages from [COAR's Notify service](https://www.coar-repositories.org/notify/).
+Kotahi can receive messages from [COAR's Notify service](https://coar-repositories.org/tools-and-resources/notify/).
 A repository tells Kotahi that a manuscript is there and requests a review from
 a group. The request creates a manuscript on the Manuscripts page, identifiable
 by the Notify logo in the title text.
