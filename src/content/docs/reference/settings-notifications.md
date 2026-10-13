@@ -3,6 +3,7 @@ title: "Settings: Email and notifications"
 description: "The Email Settings, Notification Templates and Notification Events tabs."
 sidebar: { order: 10 }
 reviewStatus: verified
+appliesTo: "release 2026.09.17-0"
 sourceNote: "Checked against Kotahi staging, September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
