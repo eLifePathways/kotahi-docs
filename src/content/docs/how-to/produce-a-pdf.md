@@ -3,7 +3,7 @@ title: "Produce a PDF"
 description: "How Kotahi turns a manuscript into a typeset PDF, and where to change the way it looks."
 sidebar: { order: 9 }
 reviewStatus: rewritten
-sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kotahi/pdf.html. Tab names corrected to the current Production interface, verified against staging on 25 September. The previous version described five tabs under their Paged.js names and did not mention History. The Download control and the editor's supported file types were confirmed by Vukile on 30 September 2026: Download renders only where the manuscript has manuscript text, and only docx is parsed by XSweet into the editor. Carried over and still unverified: that the templating language is Nunjucks; that .js files in the assets panel run at PDF generation; and the behaviour of the AI Design Studio, which is marked Beta in the product."
+sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kotahi/pdf.html. Tab names corrected to the current Production interface, verified against staging on 25 September. The previous version described five tabs under their Paged.js names and did not mention History. The Download control and the editor's supported file types were confirmed by Vukile on 30 September 2026: Download renders only where the manuscript has manuscript text, and only docx is parsed by XSweet into the editor. Three claims carried over from the old site were verified against the Kotahi source on 13 October 2026 and are no longer in doubt. Nunjucks: packages/server/package.json depends on it, and utils/applyTemplate.js configures two Nunjucks environments and renders article.njk, called from controllers/pdfExport.controllers.js. Assets: pdfHandler filters group files on extension === 'js' and downloads each into the directory it zips and posts to the Paged.js service, so the file lands beside index.html. AI Design Studio: the OpenAI key sits under aiDesignStudio.openAiApiKey in the config schema, and component-ai-assistant/AiPDFDesigner.jsx wires up undo, redo and chat history."
 ---
 
 *Turning a manuscript into a typeset PDF, and changing how that PDF looks.*
@@ -101,7 +101,7 @@ link must exist in **PDF assets** first.
 Scripts are the exception. Because Paged.js runs on the server, `<script>` tags
 in the head are not executed. To run your own JavaScript, upload it to **PDF
 assets** instead — Kotahi picks up any `.js` file there when the PDF is
-generated. Paged.js documents
+generated and places it beside the HTML, so `<script src="yourfile.js">` works.
 [hooks and custom JavaScript](https://pagedjs.org/en/documentation/10-handlers-hooks-and-custom-javascript/)
 for this.
 
