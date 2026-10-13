@@ -4,7 +4,7 @@ description: "The roles Kotahi uses, what each one can do, and how permissions a
 sidebar:
   order: 4
 reviewStatus: verified
-sourceNote: "Rewritten September 2026 against permissions confirmed by Kotahi engineering. Replaces material converted from docs.kotahi.community/advanced-kotahi/users.html."
+sourceNote: "Rewritten September 2026 against permissions confirmed by Kotahi engineering. Replaces material converted from docs.kotahi.community/advanced-kotahi/users.html. The permissions were a four-column table until 13 October 2026, when they became nested lists. At 375px the table overflowed by 20px and Starlight makes the table element itself the scroll container with no keyboard access, so the right-hand column was unreachable for a keyboard user — axe scrollable-region-focusable, WCAG 2.1.1 Keyboard. Shortening the row labels does not fix it: the three role columns need 235px between them, and the only remaining way to narrow the table would be abbreviating the role names, which is precisely what this page exists to get right. Do not restore the table. If a fourth role arrives with issue 539, keep the list form."
 ---
 
 Kotahi has three **group roles** — Group Manager, Group Admin and Admin. They
@@ -30,8 +30,6 @@ Each row shows the user's name, when they created their account, when they were
 last online, the roles they hold, and a link to delete them.
 
 ## What each group role can reach
-
-Each role includes everything the one before it can reach.
 
 **Group Manager**
 
