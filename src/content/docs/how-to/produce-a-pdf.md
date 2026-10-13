@@ -9,7 +9,7 @@ sourceNote: "Rewritten 28 September 2026 from docs.kotahi.community/advanced-kot
 *Turning a manuscript into a typeset PDF, and changing how that PDF looks.*
 
 Kotahi stores manuscripts as HTML. To produce a PDF it runs that HTML through
-**[Paged.js](https://www.pagedjs.org/)**, an open-source pagination engine
+**[Paged.js](https://pagedjs.org/)**, an open-source pagination engine
 developed by Coko, which applies your stylesheet and breaks the content into
 pages.
 
@@ -48,7 +48,7 @@ authors, the DOI — so one template serves every manuscript.
 
 Paged.js documents its own CSS rules in detail, and that documentation is
 better than anything we could repeat here. Start with
-[the Paged.js documentation](https://pagedjs.org/documentation/) once you know
+[the Paged.js documentation](https://pagedjs.org/en/documentation/) once you know
 where Kotahi keeps things.
 
 ## Where the controls are
@@ -102,7 +102,7 @@ Scripts are the exception. Because Paged.js runs on the server, `<script>` tags
 in the head are not executed. To run your own JavaScript, upload it to **PDF
 assets** instead — Kotahi picks up any `.js` file there when the PDF is
 generated. Paged.js documents
-[hooks and custom JavaScript](https://pagedjs.org/documentation/10-handlers-hooks-and-custom-javascript/)
+[hooks and custom JavaScript](https://pagedjs.org/en/documentation/10-handlers-hooks-and-custom-javascript/)
 for this.
 
 **The body** is where the layout lives — a title page, the article, whatever
