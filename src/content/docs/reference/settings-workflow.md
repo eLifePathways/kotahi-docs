@@ -3,7 +3,8 @@ title: "Settings: Workflow"
 description: "The Workflow configuration tab — dashboard, manuscripts page, control panel, submission, review, discussions, tasks, reports and users."
 sidebar: { order: 7 }
 reviewStatus: verified
-sourceNote: "Checked against Kotahi staging, September 2026. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
+appliesTo: "release 2026.10.12-0"
+sourceNote: "Checked against Kotahi staging, September 2026. Two settings labels were renamed in PR #542, which merged to staging on 2 October 2026 and shipped in release 2026.10.12-0; this page was updated the same afternoon, so the Reports and roles wording here is the renamed wording rather than the original. Converted from docs.kotahi.community/advanced-kotahi/configuration.html, which covered every settings tab on one page; it is split here so each tab can be verified on its own."
 ---
 
 Choose **Configuration** in the left menu, then the **Workflow** tab.
