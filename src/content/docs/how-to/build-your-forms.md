@@ -3,6 +3,7 @@ title: "Build your forms"
 description: "The form builder — submission, review and decision forms, field properties, and who sees what."
 sidebar: { order: 1 }
 reviewStatus: verified
+appliesTo: "release 2026.09.17-0"
 sourceNote: "Rewritten September 2026 against the current release. Merges three pages converted from docs.kotahi.community (submission.html, reviewer.html, eval.html), because Kotahi builds all three forms in one interface."
 ---
 
