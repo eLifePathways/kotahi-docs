@@ -4,6 +4,7 @@ description: "The peer review models Kotahi supports, and how to choose between 
 sidebar:
   order: 2
 reviewStatus: verified
+appliesTo: "release 2026.09.17-0"
 sourceNote: "Converted from docs.kotahi.community/getting-started/review.html. Confirmed by the eLife Pathways product manager, September 2026. This page describes configurable capability rather than screens, so it was checked against the product rather than against a running instance."
 ---
 
