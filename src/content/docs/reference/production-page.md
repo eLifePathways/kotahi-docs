@@ -3,7 +3,7 @@ title: "The Production page"
 description: "The Production page — preparing accepted content for publication."
 sidebar: { order: 5 }
 reviewStatus: rewritten
-sourceNote: "Rewritten September 2026 against the current release. Converted from docs.kotahi.community/advanced-kotahi/production.html; the configuration reference that page also carried now lives on the Settings reference pages."
+sourceNote: "Rewritten September 2026 against the current release. Converted from docs.kotahi.community/advanced-kotahi/production.html; the configuration reference that page also carried now lives on the Settings reference pages. The message shown when a manuscript cannot be displayed was renamed in PR #542, which merged to staging on 2 October 2026 and shipped in release 2026.10.12-0; this page was updated the same afternoon to quote the new wording."
 ---
 
 The Production page is where content is prepared for publication and where author proofing happens. It is available to Group Managers, Group Admins and Admins.
