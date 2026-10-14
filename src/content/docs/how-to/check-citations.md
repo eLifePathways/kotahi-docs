@@ -3,7 +3,7 @@ title: "Check and improve citations"
 description: "Kotahi's citation look-up tools, on the Production page."
 sidebar: { order: 10 }
 reviewStatus: rewritten
-sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/advanced-kotahi/citations.html."
+sourceNote: "Rewritten September 2026. Replaces material converted from docs.kotahi.community/advanced-kotahi/citations.html. Every factual claim on this page was verified against the Kotahi source on 14 October 2026, at release 2026.10.12-0: the services and the DataCite-to-Crossref fallback in server/controllers/reference/reference.controllers.js, where the fallback condition is matches.length === 0; the parsing-not-lookup behaviour of AnyStyle in server/controllers/anyStyle/; the nine editable fields in the CitationService EditModal component, which match the list here exactly; and the four Production settings in the config schema, where getDataFromDatacite defaults to false and crossrefSearchResultCount to 3. THE FIVE SCREENSHOTS ON THIS PAGE REMAIN UNVERIFIED: the Production editor would not load for the test manuscript in September, so the layout they show — the left-hand panel, the menu beside a selected reference, the look-up overlay — has never been watched working. The prose is checked; the pictures are not. Confirm the layout against a running instance before trusting the images, and do not extend this page's visual description from them."
 ---
 
 Kotahi can look a citation up against external services and offer you corrected versions of it. The tools sit on the Production page: open a manuscript's **Production** link from the Manuscripts page and scroll to the reference list.
