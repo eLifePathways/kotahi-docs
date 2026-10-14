@@ -4,7 +4,7 @@ description: "The Integrations and Publishing Endpoints tab — Semantic Scholar
 sidebar:
   order: 9
 reviewStatus: converted-unverified
-sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html. That single page covered every settings tab; it is split here so each tab can be verified on its own."
+sourceNote: "Converted from docs.kotahi.community/advanced-kotahi/configuration.html. That single page covered every settings tab; it is split here so each tab can be verified on its own. The COAR Notify section was rewritten on 1 October 2026 from Vukile's answers: the auth token is the mechanism, the IP allowlist is deprecated, and the Sciety Inbox URL and Local Contexts API key are documented here for the first time. That section is checked. The rest of the page is not, which is why the status stays converted-unverified: the Crossref and DataCite field comparison is still wrong, DOAJ is still undocumented, and the description of what Local Contexts is comes from their own site rather than from Kotahi. The COAR Notify link was corrected on 13 October 2026 after a link check found the old URL 404ing."
 ---
 
 To reach these settings in Kotahi, choose **Settings → Configuration**.
