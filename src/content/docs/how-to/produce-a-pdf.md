@@ -101,8 +101,8 @@ link must exist in **PDF assets** first.
 Scripts are the exception. Because Paged.js runs on the server, `<script>` tags
 in the head are not executed. To run your own JavaScript, upload it to **PDF
 assets** instead — Kotahi picks up any `.js` file there when the PDF is
-generated and places it beside the HTML, so `<script src="yourfile.js">` works.
-Paged.js documents
+generated and places it beside the HTML, so a `<script>` tag can reference it by
+file name alone, with no path. Paged.js documents
 [hooks and custom JavaScript](https://pagedjs.org/en/documentation/10-handlers-hooks-and-custom-javascript/)
 for this.
 
